@@ -714,7 +714,7 @@ GameObject:
   - component: {fileID: 1199933076}
   m_Layer: 0
   m_Name: PersistentObject
-  m_TagString: Untagged
+  m_TagString: PersistentObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -746,10 +746,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winText: 
-  hamster: {fileID: 2008010715}
-  cat: {fileID: 645514872}
-  rabbit: {fileID: 1976085014}
-  dog: {fileID: 2086661754}
 --- !u!1 &1317459742
 GameObject:
   m_ObjectHideFlags: 0

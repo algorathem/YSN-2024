@@ -60,10 +60,15 @@ public class WheelController : MonoBehaviour
         {
             if (finalAngle == i * totalAngle)
                 winText.text = selectedCharacter[i];
+            
         }
 
         yield return new WaitForSeconds(1f);
+
+        GameObject persistantObj = GameObject.FindGameObjectWithTag("PersistentObj") as GameObject;
+        persistantObj.GetComponent<PersistenceScript>().winText = winText.text;
         SceneManager.LoadScene("IntroductionScene");
+
     }
 
 }

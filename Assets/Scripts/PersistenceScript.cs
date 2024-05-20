@@ -16,29 +16,28 @@ public class PersistenceScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        winText = GameObject.FindGameObjectWithTag("Wheel").GetComponent<WheelController>().winText.text; //problem is on update wjeel is destroyed, so null reference, refer to otis ajain to fijure
-        
+
         if (winText == "Hamster")
         {
-            /*GameObject.FindGameObjectWithTag("Cat").GetComponent<SpriteRenderer>().enabled = true;*/
-            print("h");
+            GameObject.FindGameObjectWithTag("Hamster").GetComponent<SpriteRenderer>().enabled = true;
+         
         }
         else if (winText == "Cat")
         {
-            /*GameObject.FindGameObjectWithTag("Cat").GetComponent<SpriteRenderer>().enabled = true;*/
-            print("c");
+            GameObject.FindGameObjectWithTag("Cat").GetComponent<SpriteRenderer>().enabled = true;
+         
         }
         else if (winText == "Dog")
         {
-           /* GameObject.FindGameObjectWithTag("Cat").GetComponent<SpriteRenderer>().enabled = true;*/
-            print("d");
+            GameObject.FindGameObjectWithTag("Dog").GetComponent<SpriteRenderer>().enabled = true;
+          
         }
         else if (winText == "Rabbit")
         {
-          /*  GameObject.FindGameObjectWithTag("Cat").GetComponent<SpriteRenderer>().enabled = true;*/
-            print("r"); 
+            GameObject.FindGameObjectWithTag("Rabbit").GetComponent<SpriteRenderer>().enabled = true;
+          
         }
-      
+
 
     }
 }
