@@ -292,51 +292,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298228667}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56a1d4a580b4b8e4e9e535790dbee5f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catCards:
-  - {fileID: 2259711960836847765, guid: dce4e4ee5f421f94d84ad608a2edcb95, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 2259711960836847765, guid: dce4e4ee5f421f94d84ad608a2edcb95, type: 3}
-  - {fileID: 0}
-  hamsterCards:
-  - {fileID: 2259711960836847765, guid: dce4e4ee5f421f94d84ad608a2edcb95, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  dogCards:
-  - {fileID: 2259711960836847765, guid: dce4e4ee5f421f94d84ad608a2edcb95, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  rabbitCards:
-  - {fileID: 2259711960836847765, guid: dce4e4ee5f421f94d84ad608a2edcb95, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   topicText: {fileID: 298228670}
   allTopics:
   - Food
@@ -349,7 +309,6 @@ MonoBehaviour:
   - Health Screening
   - Materials
   winText: 
-  cards: {fileID: 0}
 --- !u!114 &298228670
 MonoBehaviour:
   m_ObjectHideFlags: 0

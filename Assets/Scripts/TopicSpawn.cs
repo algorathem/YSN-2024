@@ -5,15 +5,14 @@ using TMPro;
 
 public class TopicSpawn : MonoBehaviour
 {
-    public GameObject[] catCards = new GameObject[9];
+   /* public GameObject[] catCards = new GameObject[9];
     public GameObject[] hamsterCards = new GameObject[9];
     public GameObject[] dogCards = new GameObject[9];
-    public GameObject[] rabbitCards = new GameObject[9];
+    public GameObject[] rabbitCards = new GameObject[9];*/
 
     public TextMeshProUGUI topicText;
     public string[] allTopics = new string[9];
     public string winText;
-    public GameObject cards;
     private int topicIndex;
     // Start is called before the first frame update
 
@@ -22,14 +21,14 @@ public class TopicSpawn : MonoBehaviour
         topicIndex = Random.Range(0, 8);
         GameObject persistantObj = GameObject.FindGameObjectWithTag("PersistentObj") as GameObject;
         winText = persistantObj.GetComponent<PersistenceScript>().winText;
-        cards = GameObject.FindGameObjectWithTag("CardPosition");
+        
     }  
 
     // Update is called once per frame
     void Update()
     {
         topicText.text = allTopics[topicIndex];
-        if (Input.GetMouseButtonDown(0))
+       /* if (Input.GetMouseButtonDown(0))
         {
             if (winText == "Cat")
             {
@@ -164,7 +163,7 @@ public class TopicSpawn : MonoBehaviour
                         break;
                 }
             }
-        }
+        }*/
     }
 }
 
