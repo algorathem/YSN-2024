@@ -150,7 +150,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69861807}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1926698253}
@@ -197,6 +197,7 @@ MonoBehaviour:
   faceSprite: {fileID: -2259558277321628241, guid: 435caf0b2e8efa34eae1790ccf1f04bd, type: 3}
   backSprite: {fileID: -2051808971937755818, guid: 435caf0b2e8efa34eae1790ccf1f04bd, type: 3}
   situationDescriptionText: {fileID: 1741787738}
+  topicText: {fileID: 298228670}
   situationDescription:
   - rabbit food
   - rabbit habitat
@@ -207,7 +208,7 @@ MonoBehaviour:
   - rabbitenricmnt
   - rabbit vet
   - rabbit materials
-  topic: {fileID: 298228667}
+  topicIndex: 0
 --- !u!212 &69861811
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -273,7 +274,7 @@ GameObject:
   - component: {fileID: 298228669}
   m_Layer: 5
   m_Name: Topic
-  m_TagString: Untagged
+  m_TagString: Topic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -310,17 +311,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   topicText: {fileID: 298228670}
-  allTopics:
-  - Food
-  - Habitats
-  - Personality
-  - Toxic Objects
-  - Exercise
-  - Hygiene
-  - Enrichment
-  - Health Screening
-  - Materials
-  winText: 
   topicIndex: 0
 --- !u!114 &298228670
 MonoBehaviour:
@@ -364,7 +354,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 97690656
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -375,7 +365,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 33
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -499,7 +489,7 @@ Transform:
   m_LocalScale: {x: 1.8997, y: 1.679333, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555453511
 GameObject:
@@ -577,12 +567,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555453511}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.45191357, y: -0.4093805, z: -5.31663}
+  m_LocalScale: {x: 0.531663, y: 0.531663, z: 0.531663}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Father: {fileID: 1926698253}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1233265782
 GameObject:
@@ -611,7 +601,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233265782}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1926698253}
@@ -632,6 +622,7 @@ MonoBehaviour:
   faceSprite: {fileID: -3491745874921425858, guid: 791941359e89f14408740a5dd76fefa0, type: 3}
   backSprite: {fileID: -8302273232359590728, guid: 791941359e89f14408740a5dd76fefa0, type: 3}
   situationDescriptionText: {fileID: 1741787738}
+  topicText: {fileID: 298228670}
   situationDescription:
   - hamster food
   - hamsterhabitat
@@ -642,7 +633,7 @@ MonoBehaviour:
   - hamster enrichmetn
   - hamster vet
   - hamster materials
-  topic: {fileID: 298228667}
+  topicIndex: 0
 --- !u!61 &1233265785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -754,6 +745,7 @@ MonoBehaviour:
   faceSprite: {fileID: -3620658920443962820, guid: 60853a353962bb34bbebe5583e8bde01, type: 3}
   backSprite: {fileID: 4956484290247199680, guid: 60853a353962bb34bbebe5583e8bde01, type: 3}
   situationDescriptionText: {fileID: 1741787738}
+  topicText: {fileID: 298228670}
   situationDescription:
   - doj food
   - doj jabitat
@@ -764,7 +756,7 @@ MonoBehaviour:
   - doj enricjment
   - doj vet
   - doj materials to jet
-  topic: {fileID: 298228667}
+  topicIndex: 0
 --- !u!61 &1529984236
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -850,7 +842,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529984234}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1926698253}
@@ -954,7 +946,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 126.08387, y: 70.833466}
+  m_AnchoredPosition: {x: 126.28, y: 70.833466}
   m_SizeDelta: {x: 799.99994, y: 450.42014}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1741787736
@@ -1102,7 +1094,7 @@ GameObject:
   - component: {fileID: 1926698253}
   m_Layer: 0
   m_Name: Cards
-  m_TagString: CardPosition
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1123,8 +1115,9 @@ Transform:
   - {fileID: 1529984238}
   - {fileID: 1233265783}
   - {fileID: 69861808}
+  - {fileID: 555453514}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2102273595
 GameObject:
@@ -1204,7 +1197,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102273595}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1926698253}
@@ -1225,6 +1218,7 @@ MonoBehaviour:
   faceSprite: {fileID: 2915882729389590641, guid: 6bc37ed4bdeb57f4080ad8161f0474bc, type: 3}
   backSprite: {fileID: 8236053984699583169, guid: 6bc37ed4bdeb57f4080ad8161f0474bc, type: 3}
   situationDescriptionText: {fileID: 1741787738}
+  topicText: {fileID: 298228670}
   situationDescription:
   - cat food
   - cat jabitat
@@ -1235,7 +1229,7 @@ MonoBehaviour:
   - catn enricjment
   - cat vet
   - catmaterial
-  topic: {fileID: 298228667}
+  topicIndex: 0
 --- !u!61 &2102273599
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1326,5 +1320,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

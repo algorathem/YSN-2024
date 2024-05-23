@@ -12,19 +12,38 @@ public class CardFlipAnim : MonoBehaviour
     private bool coroutineAllowed, facedUp;
 
     public TextMeshProUGUI situationDescriptionText;
+    public TextMeshProUGUI topicText;
     public string[] situationDescription = new string[9];
-    public GameObject topic;
-    private int topicIndex;
+    public int topicIndex;
+    private string[] allTopics = new string[9];
+
+
+    void Awake()
+    {
+        topicIndex = GameObject.FindGameObjectWithTag("Topic").GetComponent<TopicSpawn>().topicIndex;
+        print(topicIndex);
+        allTopics[0] = "Food";
+        allTopics[1] = "Habitats";
+        allTopics[2] = "Personality";
+        allTopics[3] = "Toxic Objects";
+        allTopics[4] = "Exercise";
+        allTopics[5] = "Hygiene";
+        allTopics[6] = "Enrichment";
+        allTopics[7] = "Health Screening";
+        allTopics[8] = "Materials";
+
+
+
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        topicIndex = topic.GetComponent<TopicSpawn>().topicIndex;
         rend = GetComponent<SpriteRenderer>();
         rend.sprite = backSprite;
+
         coroutineAllowed = true;
         facedUp = false;
-        
     }
 
     private void OnMouseDown()
@@ -40,7 +59,9 @@ public class CardFlipAnim : MonoBehaviour
         coroutineAllowed = false;
         if (!facedUp)
         {
-            topic.GetComponent<TextMeshProUGUI>().enabled = false;
+
+            topicText.text = "Situation";
+            
             for (float i = 0f; i <= 180f; i += 10f)
             {
                 transform.rotation = Quaternion.Euler(0f, i, 0f);
@@ -50,12 +71,14 @@ public class CardFlipAnim : MonoBehaviour
                     }
                 yield return new WaitForSeconds(0.01f);
                 situationDescriptionText.text = situationDescription[topicIndex];
+                print(topicIndex);
             }
         }
         else if (facedUp)
         {
-            topic.GetComponent<TextMeshProUGUI>().enabled = true;
+            topicText.text = allTopics[topicIndex];
             situationDescriptionText.text = "";
+            
             for (float i = 180f; i >= 0f; i -= 10f)
             {
                 transform.rotation = Quaternion.Euler(0f, i, 0f);

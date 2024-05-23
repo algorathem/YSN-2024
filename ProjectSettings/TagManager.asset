@@ -10,7 +10,7 @@ TagManager:
   - Dog
   - Rabbit
   - PersistentObj
-  - CardPosition
+  - Topic
   layers:
   - Default
   - TransparentFX
