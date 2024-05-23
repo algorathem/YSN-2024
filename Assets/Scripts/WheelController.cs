@@ -15,6 +15,7 @@ public class WheelController : MonoBehaviour
     public int section;
     float totalAngle;
     public string[] selectedCharacter;
+
     // Start is called before the first frame update
     private void Start()
     {

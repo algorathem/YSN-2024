@@ -7,7 +7,7 @@ public class PersistenceScript : MonoBehaviour
 {
     public string winText;
 
-    // Start is called before the first frame update
+    
     void Awake()
     {
         DontDestroyOnLoad(this);

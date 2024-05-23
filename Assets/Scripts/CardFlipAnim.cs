@@ -40,6 +40,7 @@ public class CardFlipAnim : MonoBehaviour
         coroutineAllowed = false;
         if (!facedUp)
         {
+            topic.GetComponent<TextMeshProUGUI>().enabled = false;
             for (float i = 0f; i <= 180f; i += 10f)
             {
                 transform.rotation = Quaternion.Euler(0f, i, 0f);
@@ -49,41 +50,13 @@ public class CardFlipAnim : MonoBehaviour
                     }
                 yield return new WaitForSeconds(0.01f);
                 situationDescriptionText.text = situationDescription[topicIndex];
-               /* switch (topicIndex)
-                {
-                    case 0:
-                        situationDescriptionText.text = situationDescription[0];
-                        break;
-                    case 1:
-                        situationDescriptionText.text = situationDescription[1];
-                        break;
-                    case 2:
-                        situationDescriptionText.text = situationDescription[2];
-                        break;
-                    case 3:
-                        situationDescriptionText.text = situationDescription[3];
-                        break;
-                    case 4:
-                        situationDescriptionText.text = situationDescription[4];
-                        break;
-                    case 5:
-                        situationDescriptionText.text = situationDescription[5];
-                        break;
-                    case 6:
-                        situationDescriptionText.text = situationDescription[6];
-                        break;
-                    case 7:
-                        situationDescriptionText.text = situationDescription[7];
-                        break;
-                    case 8:
-                        situationDescriptionText.text = situationDescription[8];
-                        break;
-                }*/
             }
         }
         else if (facedUp)
         {
-            for(float i = 180f; i >= 0f; i -= 10f)
+            topic.GetComponent<TextMeshProUGUI>().enabled = true;
+            situationDescriptionText.text = "";
+            for (float i = 180f; i >= 0f; i -= 10f)
             {
                 transform.rotation = Quaternion.Euler(0f, i, 0f);
                 if (i == 90f)
@@ -92,6 +65,7 @@ public class CardFlipAnim : MonoBehaviour
                 }
                 yield return new WaitForSeconds(0.01f);
             }
+            
         }
         coroutineAllowed = true;
         facedUp = !facedUp;
