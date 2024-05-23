@@ -14,14 +14,13 @@ public class CardFlipAnim : MonoBehaviour
     public TextMeshProUGUI situationDescriptionText;
     public TextMeshProUGUI topicText;
     public string[] situationDescription = new string[9];
-    public int topicIndex;
+    public static int topicIndex;
     private string[] allTopics = new string[9];
 
 
     void Awake()
     {
-        topicIndex = GameObject.FindGameObjectWithTag("Topic").GetComponent<TopicSpawn>().topicIndex;
-        print(topicIndex);
+        
         allTopics[0] = "Food";
         allTopics[1] = "Habitats";
         allTopics[2] = "Personality";
@@ -31,7 +30,9 @@ public class CardFlipAnim : MonoBehaviour
         allTopics[6] = "Enrichment";
         allTopics[7] = "Health Screening";
         allTopics[8] = "Materials";
-
+        topicIndex = Random.Range(0, 8);
+        topicText.text = allTopics[topicIndex];
+     
 
 
     }
@@ -39,6 +40,7 @@ public class CardFlipAnim : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+     
         rend = GetComponent<SpriteRenderer>();
         rend.sprite = backSprite;
 
@@ -59,7 +61,7 @@ public class CardFlipAnim : MonoBehaviour
         coroutineAllowed = false;
         if (!facedUp)
         {
-
+          
             topicText.text = "Situation";
             
             for (float i = 0f; i <= 180f; i += 10f)
@@ -76,6 +78,7 @@ public class CardFlipAnim : MonoBehaviour
         }
         else if (facedUp)
         {
+          
             topicText.text = allTopics[topicIndex];
             situationDescriptionText.text = "";
             

@@ -208,7 +208,6 @@ MonoBehaviour:
   - rabbitenricmnt
   - rabbit vet
   - rabbit materials
-  topicIndex: 0
 --- !u!212 &69861811
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -260,6 +259,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &121347946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 121347947}
+  m_Layer: 0
+  m_Name: Action Icons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &121347947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121347946}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.1070256, y: -1.8990387, z: -2.1685562}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &298228667
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +300,6 @@ GameObject:
   - component: {fileID: 298228668}
   - component: {fileID: 298228671}
   - component: {fileID: 298228670}
-  - component: {fileID: 298228669}
   m_Layer: 5
   m_Name: Topic
   m_TagString: Topic
@@ -298,20 +326,6 @@ RectTransform:
   m_AnchoredPosition: {x: -400, y: -464.9}
   m_SizeDelta: {x: 200, y: 50.000015}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &298228669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 298228667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56a1d4a580b4b8e4e9e535790dbee5f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  topicText: {fileID: 298228670}
-  topicIndex: 0
 --- !u!114 &298228670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,7 +647,6 @@ MonoBehaviour:
   - hamster enrichmetn
   - hamster vet
   - hamster materials
-  topicIndex: 0
 --- !u!61 &1233265785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -756,7 +769,6 @@ MonoBehaviour:
   - doj enricjment
   - doj vet
   - doj materials to jet
-  topicIndex: 0
 --- !u!61 &1529984236
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1229,7 +1241,6 @@ MonoBehaviour:
   - catn enricjment
   - cat vet
   - catmaterial
-  topicIndex: 0
 --- !u!61 &2102273599
 BoxCollider2D:
   m_ObjectHideFlags: 0
