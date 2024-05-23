@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CardFlipAnim : MonoBehaviour
 {
@@ -10,9 +11,15 @@ public class CardFlipAnim : MonoBehaviour
     private Sprite faceSprite, backSprite;
     private bool coroutineAllowed, facedUp;
 
+    public TextMeshProUGUI situationDescriptionText;
+    public string[] situationDescription = new string[9];
+    public GameObject topic;
+    private int topicIndex;
+
     // Start is called before the first frame update
     void Start()
     {
+        topicIndex = topic.GetComponent<TopicSpawn>().topicIndex;
         rend = GetComponent<SpriteRenderer>();
         rend.sprite = backSprite;
         coroutineAllowed = true;
@@ -41,6 +48,37 @@ public class CardFlipAnim : MonoBehaviour
                         rend.sprite = faceSprite;
                     }
                 yield return new WaitForSeconds(0.01f);
+                situationDescriptionText.text = situationDescription[topicIndex];
+               /* switch (topicIndex)
+                {
+                    case 0:
+                        situationDescriptionText.text = situationDescription[0];
+                        break;
+                    case 1:
+                        situationDescriptionText.text = situationDescription[1];
+                        break;
+                    case 2:
+                        situationDescriptionText.text = situationDescription[2];
+                        break;
+                    case 3:
+                        situationDescriptionText.text = situationDescription[3];
+                        break;
+                    case 4:
+                        situationDescriptionText.text = situationDescription[4];
+                        break;
+                    case 5:
+                        situationDescriptionText.text = situationDescription[5];
+                        break;
+                    case 6:
+                        situationDescriptionText.text = situationDescription[6];
+                        break;
+                    case 7:
+                        situationDescriptionText.text = situationDescription[7];
+                        break;
+                    case 8:
+                        situationDescriptionText.text = situationDescription[8];
+                        break;
+                }*/
             }
         }
         else if (facedUp)

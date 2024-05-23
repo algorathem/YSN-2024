@@ -13,7 +13,7 @@ public class TopicSpawn : MonoBehaviour
     public TextMeshProUGUI topicText;
     public string[] allTopics = new string[9];
     public string winText;
-    private int topicIndex;
+    public int topicIndex;
     // Start is called before the first frame update
 
     void Start()
