@@ -53,6 +53,7 @@ public class CardFlipAnim : MonoBehaviour
         if (coroutineAllowed)
         {
             StartCoroutine(RotateCard());
+          
         }
     }
 
@@ -103,4 +104,9 @@ public class CardFlipAnim : MonoBehaviour
     {
         
     }
+    //need for loop for action card
+    //card movement animatiom, attach to all cards
+    //instantiate 3 action cards on same location.
+    //icon to persist at the bottom to run out of cards
+    //for(actual_card_index==0;actual_card_index<=Count_of_cards;actual_card_index++) 
 }
