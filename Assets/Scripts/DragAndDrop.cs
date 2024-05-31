@@ -7,11 +7,11 @@ public class DragAndDrop : MonoBehaviour
 {
     public bool isDragging = false;
     private Vector2 pos;
-    public Camera mainCamera_m;
+    private Camera mainCamera_m;
     // Start is called before the first frame update
     void Start()
     {
-        
+        mainCamera_m = Camera.main;
     }
     
     public void StartDrag()
