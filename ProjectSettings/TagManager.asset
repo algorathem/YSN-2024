@@ -11,6 +11,7 @@ TagManager:
   - Rabbit
   - PersistentObj
   - Topic
+  - ActionButton
   layers:
   - Default
   - TransparentFX
