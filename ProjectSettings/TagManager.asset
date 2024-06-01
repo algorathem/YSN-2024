@@ -12,6 +12,7 @@ TagManager:
   - PersistentObj
   - Topic
   - ActionButton
+  - MainCanvas
   layers:
   - Default
   - TransparentFX

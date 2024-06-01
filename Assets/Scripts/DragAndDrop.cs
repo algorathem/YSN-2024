@@ -17,14 +17,13 @@ public class DragAndDrop : MonoBehaviour
     public void StartDrag()
     {
         isDragging = true;
-        print("drag has begun");
-
+        print("start drag");
     }
 
     public void EndDrag()
     {
         isDragging = false;
-        print("drag ended");
+        print("end drg");
     }
 
     // Update is called once per frame
@@ -32,13 +31,13 @@ public class DragAndDrop : MonoBehaviour
     {
         Vector3 mouseposition = Input.mousePosition;
         mouseposition.z = mainCamera_m.nearClipPlane;
-        mouseposition = Camera.main.ScreenToWorldPoint(mouseposition);
-        print(mouseposition);
+        mouseposition = mainCamera_m.ScreenToWorldPoint(mouseposition);
+       
         if (isDragging)
         {
 
             transform.position = mouseposition;
-            Debug.Log("Is dragging");
+            print("is dragg");
         }
     }
 }

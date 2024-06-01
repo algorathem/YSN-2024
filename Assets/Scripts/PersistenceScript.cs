@@ -9,7 +9,7 @@ public class PersistenceScript : MonoBehaviour
     private Button deckOfActions;
     public Sprite sprite;
 
-    
+
     void Awake()
     {
         DontDestroyOnLoad(this);
@@ -56,6 +56,6 @@ public class PersistenceScript : MonoBehaviour
 
         }
 
-        
+
     }
 }

@@ -8,12 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4018582356049274410}
+  - component: {fileID: 3778532664541352164}
   - component: {fileID: 4018582356049274411}
-  - component: {fileID: 4018582356049274836}
   - component: {fileID: 4018582356049274837}
-  - component: {fileID: 6009485881100902091}
-  - component: {fileID: 2902761389658693669}
+  - component: {fileID: 1463681538134174377}
+  - component: {fileID: 1877301254118721869}
   m_Layer: 0
   m_Name: cat_action
   m_TagString: Untagged
@@ -21,8 +20,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4018582356049274410
-Transform:
+--- !u!224 &3778532664541352164
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -35,6 +34,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 2.35, y: 4.07}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &4018582356049274411
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -86,32 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4018582356049274836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4018582356049274838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 070b1206a2ad9654994f0b08de41314b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  faceSprite: {fileID: 2915882729389590641, guid: 6bc37ed4bdeb57f4080ad8161f0474bc, type: 3}
-  backSprite: {fileID: 8236053984699583169, guid: 6bc37ed4bdeb57f4080ad8161f0474bc, type: 3}
-  situationDescriptionText: {fileID: 0}
-  topicText: {fileID: 0}
-  situationDescription:
-  - q
-  - a
-  - a
-  - a
-  - a
-  - a
-  - aa
-  - a
-  - a
 --- !u!61 &4018582356049274837
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -138,7 +116,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.35, y: 4.07}
   m_EdgeRadius: 0
---- !u!114 &6009485881100902091
+--- !u!114 &1463681538134174377
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,11 +125,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4018582356049274838}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc1693672289ef44992c90abd098a096, type: 3}
+  m_Script: {fileID: 11500000, guid: db3ea8d6633be7c45b43e404ded5fe0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDragging: 0
---- !u!114 &2902761389658693669
+  faceSprite: {fileID: 2915882729389590641, guid: 6bc37ed4bdeb57f4080ad8161f0474bc, type: 3}
+  backSprite: {fileID: 8236053984699583169, guid: 6bc37ed4bdeb57f4080ad8161f0474bc, type: 3}
+--- !u!114 &1877301254118721869
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,39 +139,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4018582356049274838}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Script: {fileID: 11500000, guid: 842d17b25ff0c54439028bd083325cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 13
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6009485881100902091}
-          m_TargetAssemblyTypeName: DragAndDrop, Assembly-CSharp
-          m_MethodName: StartDrag
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 14
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6009485881100902091}
-          m_TargetAssemblyTypeName: DragAndDrop, Assembly-CSharp
-          m_MethodName: EndDrag
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  canvas: {fileID: 0}

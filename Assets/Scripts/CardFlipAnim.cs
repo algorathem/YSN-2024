@@ -9,7 +9,7 @@ public class CardFlipAnim : MonoBehaviour
 
     [SerializeField]
     private Sprite faceSprite, backSprite;
-    private bool coroutineAllowed, facedUp;
+    private bool coroutineAllowed;
 
     public TextMeshProUGUI situationDescriptionText;
     public TextMeshProUGUI topicText;
@@ -45,7 +45,7 @@ public class CardFlipAnim : MonoBehaviour
         rend.sprite = backSprite;
 
         coroutineAllowed = true;
-        facedUp = false;
+        
     }
 
     private void OnMouseDown()
@@ -60,8 +60,7 @@ public class CardFlipAnim : MonoBehaviour
     private IEnumerator RotateCard()
     {
         coroutineAllowed = false;
-        if (!facedUp)
-        {
+        
           
             topicText.text = "Situation";
             
@@ -74,39 +73,10 @@ public class CardFlipAnim : MonoBehaviour
                     }
                 yield return new WaitForSeconds(0.01f);
                 situationDescriptionText.text = situationDescription[topicIndex];
-                print(topicIndex);
+               
             }
-        }
-        else if (facedUp)
-        {
-          
-            topicText.text = allTopics[topicIndex];
-            situationDescriptionText.text = "";
-            
-            for (float i = 180f; i >= 0f; i -= 10f)
-            {
-                transform.rotation = Quaternion.Euler(0f, i, 0f);
-                if (i == 90f)
-                {
-                    rend.sprite = backSprite;
-                }
-                yield return new WaitForSeconds(0.01f);
-            }
-            
-        }
-        coroutineAllowed = true;
-        facedUp = !facedUp;
         
-        
+       
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    //need for loop for action card
-    //card movement animatiom, attach to all cards
-    //instantiate 3 action cards on same location.
-    //icon to persist at the bottom to run out of cards
-    //for(actual_card_index==0;actual_card_index<=Count_of_cards;actual_card_index++) 
+  
 }

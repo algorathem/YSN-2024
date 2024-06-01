@@ -534,7 +534,7 @@ GameObject:
   - component: {fileID: 855369371}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: MainCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -746,6 +746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winText: 
+  sprite: {fileID: 0}
 --- !u!1 &1317459742
 GameObject:
   m_ObjectHideFlags: 0
