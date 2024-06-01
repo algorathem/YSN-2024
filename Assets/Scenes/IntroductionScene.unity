@@ -271,6 +271,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   catAction: {fileID: 4018582356049274838, guid: c1a25f02e6624f6468d56ae3c6b006ff, type: 3}
+  dogAction: {fileID: 2165247793922279047, guid: cd3c248abcbb26f4da055ce3e08fb838, type: 3}
+  rabbitAction: {fileID: 5357943004532777196, guid: 22102ed372bccbc4dba79470c72ffd46, type: 3}
+  hamsterAction: {fileID: 3352133561634266357, guid: 992193a0c6eb43c479c1d802ba170450, type: 3}
 --- !u!61 &27614094
 BoxCollider2D:
   m_ObjectHideFlags: 0
