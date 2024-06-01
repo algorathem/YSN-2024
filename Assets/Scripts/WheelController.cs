@@ -68,7 +68,7 @@ public class WheelController : MonoBehaviour
 
         GameObject persistantObj = GameObject.FindGameObjectWithTag("PersistentObj") as GameObject;
         persistantObj.GetComponent<PersistenceScript>().winText = winText.text;
-        //SceneManager.LoadScene("IntroductionScene");
+        SceneManager.LoadScene("IntroductionScene");
 
     }
 
