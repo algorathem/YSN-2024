@@ -9,6 +9,8 @@ public class ActionSpawn : MonoBehaviour
     public GameObject rabbitAction;
     public GameObject hamsterAction;
 
+    //public Canvas canvas;
+
     private int actionCardCount = 0;
     private string animalText;
     
