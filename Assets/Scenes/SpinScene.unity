@@ -747,6 +747,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winText: 
   sprite: {fileID: 0}
+  dogCard: {fileID: 3261932892402080793, guid: 8ef7866f6bf7c8d42a3831a257384906, type: 3}
+  catCard: {fileID: 3228520012058545431, guid: 410c76eec99c0b54abed791e0a81dfcb, type: 3}
+  rabbitCard: {fileID: 6840591278477955207, guid: 5cc1530000c6e8e4db9bf7bd05ba3ac2, type: 3}
+  hamsterCard: {fileID: 2447618697566611040, guid: 833bf8dad0f3e6e4b990e7eb49f04ef6, type: 3}
 --- !u!1 &1317459742
 GameObject:
   m_ObjectHideFlags: 0

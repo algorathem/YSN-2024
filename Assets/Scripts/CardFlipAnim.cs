@@ -10,9 +10,9 @@ public class CardFlipAnim : MonoBehaviour
     [SerializeField]
     private Sprite faceSprite, backSprite;
     private bool coroutineAllowed;
-
-    public TextMeshProUGUI situationDescriptionText;
-    public TextMeshProUGUI topicText;
+  
+    private TextMeshProUGUI situationDescriptionText;
+    private TextMeshProUGUI topicText;
     public string[] situationDescription = new string[9];
     public static int topicIndex;
     private string[] allTopics = new string[9];
@@ -20,7 +20,9 @@ public class CardFlipAnim : MonoBehaviour
 
     void Awake()
     {
-        
+        situationDescriptionText = GameObject.FindGameObjectWithTag("Description").GetComponent<TextMeshProUGUI>();
+        topicText = GameObject.FindGameObjectWithTag("Topic").GetComponent<TextMeshProUGUI>();
+
         allTopics[0] = "Food";
         allTopics[1] = "Habitats";
         allTopics[2] = "Personality";
