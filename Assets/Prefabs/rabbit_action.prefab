@@ -111,6 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 842d17b25ff0c54439028bd083325cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialSprite: {fileID: -2051808971937755818, guid: 435caf0b2e8efa34eae1790ccf1f04bd, type: 3}
+  draggingSprite: {fileID: -2051808971937755818, guid: 435caf0b2e8efa34eae1790ccf1f04bd, type: 3}
 --- !u!61 &7319543117854852958
 BoxCollider2D:
   m_ObjectHideFlags: 0

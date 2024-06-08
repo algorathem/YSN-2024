@@ -97,6 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 842d17b25ff0c54439028bd083325cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialSprite: {fileID: 0}
+  draggingSprite: {fileID: 0}
 --- !u!61 &2165247793922279045
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -135,5 +137,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db3ea8d6633be7c45b43e404ded5fe0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  faceSprite: {fileID: -3620658920443962820, guid: 60853a353962bb34bbebe5583e8bde01, type: 3}
+  faceSprite: {fileID: 4956484290247199680, guid: 60853a353962bb34bbebe5583e8bde01, type: 3}
   backSprite: {fileID: 4956484290247199680, guid: 60853a353962bb34bbebe5583e8bde01, type: 3}

@@ -142,3 +142,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 842d17b25ff0c54439028bd083325cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialSprite: {fileID: 8236053984699583169, guid: 6bc37ed4bdeb57f4080ad8161f0474bc, type: 3}
+  draggingSprite: {fileID: 8236053984699583169, guid: 6bc37ed4bdeb57f4080ad8161f0474bc, type: 3}
