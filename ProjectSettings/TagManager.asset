@@ -13,6 +13,8 @@ TagManager:
   - Topic
   - ActionButton
   - MainCanvas
+  - Description
+  - TextParent
   layers:
   - Default
   - TransparentFX

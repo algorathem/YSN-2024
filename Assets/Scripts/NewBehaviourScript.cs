@@ -7,10 +7,12 @@ public class NewBehaviourScript : MonoBehaviour, IBeginDragHandler, IEndDragHand
 {
     private Canvas canvas;
     private Vector2 pos;
+    public GameObject draggableObject;
 
     private void Awake()
     {
         canvas = GameObject.FindGameObjectWithTag("MainCanvas").GetComponent<Canvas>();
+        draggableObject = this.gameObject;
 
     }
 
@@ -30,32 +32,32 @@ public class NewBehaviourScript : MonoBehaviour, IBeginDragHandler, IEndDragHand
         Debug.Log("OnDrag");
 
         RectTransformUtility.ScreenPointToLocalPointInRectangle(canvas.transform as RectTransform, Input.mousePosition, canvas.worldCamera, out pos);
-        Vector3 draggablePos = transform.position;
+        Vector3 draggablePos = draggableObject.transform.position;
         transform.position = canvas.transform.TransformPoint(pos);
         //print("transform" + " " + transform.position);
         //print("draggablex" + " " + draggablePos.x);
         //print("draggabley" + " " + draggablePos.y);
-        if (draggablePos.x <= -8)
+        if (draggablePos.x <= -2)
         {
             print("outofbound");
-            draggablePos.x = -8;
+            draggablePos = new Vector3(0, 0, 0);
         }
 
-        if (draggablePos.x >= 8)
+        if (draggablePos.x >= 2)
         {
             print("outofbound");
-            draggablePos.x = 8;
+            draggablePos = new Vector3(0, 0, 0);
         }
 
-        if (draggablePos.y <= -3)
+        if (draggablePos.y <= -1)
         {
-            draggablePos.y = -3;
+            draggablePos = new Vector3(0, 0, 0);
             print("outofbound");
         }
 
-        if (draggablePos.y >= 3)
+        if (draggablePos.y >= 1)
         {
-            draggablePos.y = 3;
+            draggablePos = new Vector3(0, 0, 0);
             print("outofbound");
         }
 
@@ -63,7 +65,8 @@ public class NewBehaviourScript : MonoBehaviour, IBeginDragHandler, IEndDragHand
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("OnEndDrag");
 
+        Debug.Log("OnEndDrag");
+        
     }
 }
