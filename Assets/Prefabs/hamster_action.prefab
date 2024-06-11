@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 3352133561634266359}
   - component: {fileID: 3352133561634266356}
   - component: {fileID: 6662613639010652359}
-  - component: {fileID: 7244651125780172735}
   - component: {fileID: 5117287064607461494}
+  - component: {fileID: -8171625338364018989}
   m_Layer: 0
   m_Name: hamster_action
-  m_TagString: Untagged
+  m_TagString: ActionCard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,20 +99,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faceSprite: {fileID: -3491745874921425858, guid: 791941359e89f14408740a5dd76fefa0, type: 3}
   backSprite: {fileID: -8302273232359590728, guid: 791941359e89f14408740a5dd76fefa0, type: 3}
---- !u!114 &7244651125780172735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3352133561634266357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842d17b25ff0c54439028bd083325cfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialSprite: {fileID: -8302273232359590728, guid: 791941359e89f14408740a5dd76fefa0, type: 3}
-  draggingSprite: {fileID: -8302273232359590728, guid: 791941359e89f14408740a5dd76fefa0, type: 3}
 --- !u!61 &5117287064607461494
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -139,3 +125,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.84, y: 5.12}
   m_EdgeRadius: 0
+--- !u!114 &-8171625338364018989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3352133561634266357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f3e88cc33200f4e839cea926165f6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider2d: {fileID: 0}
+  ScreenBounds:
+    serializedVersion: 2
+    x: -9
+    y: -3.5
+    width: 18
+    height: 10
+  DrawBoundary: 0

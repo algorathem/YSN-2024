@@ -22,8 +22,5 @@ public class AnswerSlot : MonoBehaviour, IDropHandler
         Debug.Log("Ondrop");
     }
 
-   /* private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("trigger");
-    }*/
+
 }

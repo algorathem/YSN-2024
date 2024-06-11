@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 4018582356049274411}
   - component: {fileID: 4018582356049274837}
   - component: {fileID: 1463681538134174377}
-  - component: {fileID: 1877301254118721869}
+  - component: {fileID: 6168809768838650558}
   m_Layer: 0
   m_Name: cat_action
-  m_TagString: Untagged
+  m_TagString: ActionCard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faceSprite: {fileID: 2915882729389590641, guid: 6bc37ed4bdeb57f4080ad8161f0474bc, type: 3}
   backSprite: {fileID: 8236053984699583169, guid: 6bc37ed4bdeb57f4080ad8161f0474bc, type: 3}
---- !u!114 &1877301254118721869
+--- !u!114 &6168809768838650558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,8 +139,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4018582356049274838}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842d17b25ff0c54439028bd083325cfa, type: 3}
+  m_Script: {fileID: 11500000, guid: f8f3e88cc33200f4e839cea926165f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialSprite: {fileID: 8236053984699583169, guid: 6bc37ed4bdeb57f4080ad8161f0474bc, type: 3}
-  draggingSprite: {fileID: 8236053984699583169, guid: 6bc37ed4bdeb57f4080ad8161f0474bc, type: 3}
+  collider2d: {fileID: 0}
+  ScreenBounds:
+    serializedVersion: 2
+    x: -9
+    y: -3.5
+    width: 18
+    height: 10
+  DrawBoundary: 0

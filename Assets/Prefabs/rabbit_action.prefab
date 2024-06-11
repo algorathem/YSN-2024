@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 5357943004532777194}
   - component: {fileID: 5357943004532777197}
   - component: {fileID: 3849854495079172801}
-  - component: {fileID: 4516997205467691983}
   - component: {fileID: 7319543117854852958}
+  - component: {fileID: -5310265746755934059}
   m_Layer: 0
   m_Name: rabbit_action
-  m_TagString: Untagged
+  m_TagString: ActionCard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,20 +99,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faceSprite: {fileID: -2259558277321628241, guid: 435caf0b2e8efa34eae1790ccf1f04bd, type: 3}
   backSprite: {fileID: -2051808971937755818, guid: 435caf0b2e8efa34eae1790ccf1f04bd, type: 3}
---- !u!114 &4516997205467691983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5357943004532777196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842d17b25ff0c54439028bd083325cfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialSprite: {fileID: -2051808971937755818, guid: 435caf0b2e8efa34eae1790ccf1f04bd, type: 3}
-  draggingSprite: {fileID: -2051808971937755818, guid: 435caf0b2e8efa34eae1790ccf1f04bd, type: 3}
 --- !u!61 &7319543117854852958
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -139,3 +125,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.84, y: 5.12}
   m_EdgeRadius: 0
+--- !u!114 &-5310265746755934059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5357943004532777196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f3e88cc33200f4e839cea926165f6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider2d: {fileID: 0}
+  ScreenBounds:
+    serializedVersion: 2
+    x: -9
+    y: -3.5
+    width: 18
+    height: 10
+  DrawBoundary: 0

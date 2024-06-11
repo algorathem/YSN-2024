@@ -148,14 +148,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f3e88cc33200f4e839cea926165f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  draggableObject: {fileID: 0}
+  collider2d: {fileID: 0}
   ScreenBounds:
     serializedVersion: 2
-    x: -5
+    x: -9
     y: -3.5
-    width: 10
-    height: 8
-  DrawBoundary: 0
+    width: 18
+    height: 10
+  DrawBoundary: 1
 --- !u!1 &4542958655366614535
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,7 +516,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8819725105880044112}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 

@@ -47,7 +47,7 @@ public class CardFlipAnim : MonoBehaviour
         rend.sprite = backSprite;
 
         coroutineAllowed = true;
-        
+        //StartCoroutine(RotateCard());
     }
 
     private void OnMouseDown()
@@ -55,7 +55,7 @@ public class CardFlipAnim : MonoBehaviour
         if (coroutineAllowed)
         {
             StartCoroutine(RotateCard());
-          
+
         }
     }
 
@@ -65,6 +65,7 @@ public class CardFlipAnim : MonoBehaviour
         
           
             topicText.text = "Situation";
+
             
             for (float i = 0f; i <= 180f; i += 10f)
             {

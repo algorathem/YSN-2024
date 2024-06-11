@@ -5,46 +5,46 @@ using UnityEngine.EventSystems;
 
 public class EndDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
+    //If you use 2D sprite as drop target, use this code
+
+    public Collider2D collider2d;
+
     private Canvas canvas;
-    private Vector2 pos;
-    public GameObject draggableObject;
     public Rect ScreenBounds;
     public bool DrawBoundary;
+    private Vector2 pos;
+
+
+
+
 
     private void Awake()
     {
+     
+        collider2d = GetComponent<Collider2D>();
         canvas = GameObject.FindGameObjectWithTag("MainCanvas").GetComponent<Canvas>();
-        draggableObject = this.gameObject;
-
-    }
-
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        Debug.Log("PointerDown");
+       
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("OnBeginDrag");
-
+        collider2d.enabled = false;
+        print("begin");
+       
     }
-
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("OnDrag");
-
+        /* transform.position = eventData.pointerCurrentRaycast.worldPosition;*/
+        
         RectTransformUtility.ScreenPointToLocalPointInRectangle(canvas.transform as RectTransform, Input.mousePosition, canvas.worldCamera, out pos);
-        Vector3 draggablePos = draggableObject.transform.position;
+        Vector3 draggablePos = transform.position;
         transform.position = canvas.transform.TransformPoint(pos);
- 
-
     }
-
     public void OnEndDrag(PointerEventData eventData)
     {
+        collider2d.enabled = true;
+        Debug.Log("end");
 
-        Debug.Log("OnEndDrag");
-        
     }
 
     void LateUpdate()
@@ -78,4 +78,8 @@ public class EndDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragH
         Gizmos.DrawLine(new Vector2(ScreenBounds.xMax, ScreenBounds.yMax), new Vector2(ScreenBounds.xMin, ScreenBounds.yMax));
 
     }
+
+
+
 }
+
