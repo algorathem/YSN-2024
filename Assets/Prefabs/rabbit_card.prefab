@@ -263,6 +263,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   draggableObject: {fileID: 0}
+  ScreenBounds:
+    serializedVersion: 2
+    x: -5
+    y: -3.5
+    width: 10
+    height: 8
+  DrawBoundary: 0
 --- !u!1 &7351711119438578450
 GameObject:
   m_ObjectHideFlags: 0
