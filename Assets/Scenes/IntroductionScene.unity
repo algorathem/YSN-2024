@@ -270,10 +270,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 758e85d3877793948a8aac8695e83128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catAction: {fileID: 4018582356049274838, guid: c1a25f02e6624f6468d56ae3c6b006ff, type: 3}
-  dogAction: {fileID: 2165247793922279047, guid: cd3c248abcbb26f4da055ce3e08fb838, type: 3}
-  rabbitAction: {fileID: 5357943004532777196, guid: 22102ed372bccbc4dba79470c72ffd46, type: 3}
-  hamsterAction: {fileID: 3352133561634266357, guid: 992193a0c6eb43c479c1d802ba170450, type: 3}
+  cat1: {fileID: 4018582356049274838, guid: c1a25f02e6624f6468d56ae3c6b006ff, type: 3}
+  cat2: {fileID: 4018582356049274838, guid: c1a25f02e6624f6468d56ae3c6b006ff, type: 3}
+  cat3: {fileID: 4018582356049274838, guid: c1a25f02e6624f6468d56ae3c6b006ff, type: 3}
+  dog1: {fileID: 2165247793922279047, guid: cd3c248abcbb26f4da055ce3e08fb838, type: 3}
+  dog2: {fileID: 2165247793922279047, guid: cd3c248abcbb26f4da055ce3e08fb838, type: 3}
+  dog3: {fileID: 2165247793922279047, guid: cd3c248abcbb26f4da055ce3e08fb838, type: 3}
+  rabbit1: {fileID: 5357943004532777196, guid: 22102ed372bccbc4dba79470c72ffd46, type: 3}
+  rabbit2: {fileID: 5357943004532777196, guid: 22102ed372bccbc4dba79470c72ffd46, type: 3}
+  rabbit3: {fileID: 5357943004532777196, guid: 22102ed372bccbc4dba79470c72ffd46, type: 3}
+  hamster1: {fileID: 3352133561634266357, guid: 992193a0c6eb43c479c1d802ba170450, type: 3}
+  hamster2: {fileID: 3352133561634266357, guid: 992193a0c6eb43c479c1d802ba170450, type: 3}
+  hamster3: {fileID: 3352133561634266357, guid: 992193a0c6eb43c479c1d802ba170450, type: 3}
 --- !u!61 &27614094
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -313,6 +321,7 @@ GameObject:
   - component: {fileID: 30113660}
   - component: {fileID: 30113659}
   - component: {fileID: 30113658}
+  - component: {fileID: 30113662}
   m_Layer: 5
   m_Name: Correct Card Slot
   m_TagString: Untagged
@@ -415,6 +424,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30113656}
   m_CullTransparentMesh: 1
+--- !u!50 &30113662
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30113656}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &298228667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,6 +1392,7 @@ GameObject:
   - component: {fileID: 1680828749}
   - component: {fileID: 1680828748}
   - component: {fileID: 1680828747}
+  - component: {fileID: 1680828751}
   m_Layer: 5
   m_Name: Incorrect Card Slot
   m_TagString: Untagged
@@ -1464,6 +1495,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680828745}
   m_CullTransparentMesh: 1
+--- !u!50 &1680828751
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680828745}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1741787736
 GameObject:
   m_ObjectHideFlags: 0

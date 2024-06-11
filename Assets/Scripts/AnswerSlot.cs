@@ -22,5 +22,11 @@ public class AnswerSlot : MonoBehaviour, IDropHandler
         Debug.Log("Ondrop");
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("COLLIDE");
+        Debug.Log("Object that collided with me: " + collision.gameObject.GetComponent<ActionFlipAnim>().isCorrect);
+    }
+
 
 }

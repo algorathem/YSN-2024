@@ -17,6 +17,7 @@ TagManager:
   - TextParent
   - ActionCard
   - SituationCard
+  - Option
   layers:
   - Default
   - TransparentFX
