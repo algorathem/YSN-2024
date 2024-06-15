@@ -225,11 +225,12 @@ MonoBehaviour:
   situationDescription:
   - 'Your cat is very thirsty! What should you NOT give it for hydration? '
   - "What\u2019s the best place for a cat to live in? "
-  - cat personality
+  - 'Your cat has separation anxiety. What should you do to reassure it that you
+    will  be coming back home? '
   - cat toxic
   - cat exercise
-  - cat jyjiene
-  - catn enricjment
+  - Cat Hygiene
+  - Cat enrichment
   - cat vet
   - catmaterial
 --- !u!114 &-8646250040382290269

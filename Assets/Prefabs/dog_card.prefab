@@ -242,13 +242,14 @@ MonoBehaviour:
   backSprite: {fileID: 4956484290247199680, guid: 60853a353962bb34bbebe5583e8bde01, type: 3}
   situationDescription:
   - doj food
-  - doj jabitat
-  - doj persoality
-  - doj toxic
-  - doj exercise
-  - doj jyjien
-  - doj enricjment
-  - doj vet
+  - 'You''ve just adopted a dog and are getting your house ready for its arrival.
+    What items should you remove to ensure a safe and happy environment? '
+  - Dog personality situation
+  - Dog toxic situation
+  - Dog exercise situation
+  - Dog Hygiene Situation
+  - dog enrichment situation
+  - dog vet situation
   - doj materials to jet
 --- !u!114 &1570283535358343945
 MonoBehaviour:
