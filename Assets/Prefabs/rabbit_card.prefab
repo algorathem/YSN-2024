@@ -215,13 +215,14 @@ MonoBehaviour:
   faceSprite: {fileID: -2259558277321628241, guid: 435caf0b2e8efa34eae1790ccf1f04bd, type: 3}
   backSprite: {fileID: -2051808971937755818, guid: 435caf0b2e8efa34eae1790ccf1f04bd, type: 3}
   situationDescription:
-  - rabbit food
+  - "The vet said your rabbit can\u2019t eat too much sweet food. What kind of healthy
+    food should you give it now? "
   - rabbit habitat
-  - rabbit personality
+  - 'Your rabbit isn''t acting like its usual happy self. What should you do? '
   - rabbit toxic
   - rabbit exercise
-  - rabibt hygiene
-  - rabbitenricmnt
+  - Rabbit Hygiene Situation
+  - Rabbit Enrichment
   - rabbit vet
   - rabbit materials
 --- !u!61 &6840591278477955225

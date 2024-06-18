@@ -128,7 +128,7 @@ MonoBehaviour:
   backSprite: {fileID: -8302273232359590728, guid: 791941359e89f14408740a5dd76fefa0, type: 3}
   situationDescription:
   - hamster food
-  - hamsterhabitat
+  - 'You are buying a cage for your hamster, how big should it be? '
   - hamster personality
   - hamster toxic
   - hamster exercise

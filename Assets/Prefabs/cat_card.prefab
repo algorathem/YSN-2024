@@ -223,13 +223,14 @@ MonoBehaviour:
   faceSprite: {fileID: 2915882729389590641, guid: 6bc37ed4bdeb57f4080ad8161f0474bc, type: 3}
   backSprite: {fileID: 8236053984699583169, guid: 6bc37ed4bdeb57f4080ad8161f0474bc, type: 3}
   situationDescription:
-  - cat food
-  - cat jabitat
-  - cat personality
+  - 'Your cat is very thirsty! What should you NOT give it for hydration? '
+  - "What\u2019s the best place for a cat to live in? "
+  - 'Your cat has separation anxiety. What should you do to reassure it that you
+    will  be coming back home? '
   - cat toxic
   - cat exercise
-  - cat jyjiene
-  - catn enricjment
+  - Cat Hygiene
+  - Cat enrichment
   - cat vet
   - catmaterial
 --- !u!114 &-8646250040382290269
