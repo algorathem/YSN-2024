@@ -28,7 +28,7 @@ public class ActionSpawn : MonoBehaviour
 
     public void OnMouseDown()
     {
-
+        print("click once");
         if (actionCardCount < 3)
         {
             switch (animalText)
