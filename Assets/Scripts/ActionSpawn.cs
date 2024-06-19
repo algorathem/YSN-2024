@@ -200,8 +200,6 @@ public class ActionSpawn : MonoBehaviour
     private string animalText;
     private int topicIndex;
 
-
-    // Declare class-level variables
     private List<int> availableIndices; // List to store indices available for random selection
     private int currentIndex = 0; // Current index in the shuffled list
 
@@ -247,7 +245,7 @@ public class ActionSpawn : MonoBehaviour
         if (currentIndex >= availableIndices.Count)
         {
             Debug.LogWarning("All indices have been used. Reshuffling...");
-            InitializeIndices(3); // Adjust the count based on your number of prefabs
+            InitializeIndices(3); 
         }
 
         int randomIndex = availableIndices[currentIndex];
@@ -397,8 +395,8 @@ public class ActionSpawn : MonoBehaviour
                             catToxicObjList.Add(catToxicObjectWrong1);
                             catToxicObjList.Add(catToxicObjectWrong2);
 
-                            int catToxicObjIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(catToxicObjList[catToxicObjIndex]);
+                           
+                            Instantiate(catToxicObjList[randomIndex]);
 
                             break;
                         case "Dog":
@@ -406,8 +404,8 @@ public class ActionSpawn : MonoBehaviour
                             dogToxicObjList.Add(dogToxicObjectWrong1);
                             dogToxicObjList.Add(dogToxicObjectWrong2);
 
-                            int dogToxicObjIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(dogToxicObjList[dogToxicObjIndex]);
+                 
+                            Instantiate(dogToxicObjList[randomIndex]);
 
                             break;
                         case "Rabbit":
@@ -415,8 +413,8 @@ public class ActionSpawn : MonoBehaviour
                             rabbitToxicObjList.Add(rabbitToxicObjectWrong1);
                             rabbitToxicObjList.Add(rabbitToxicObjectWrong2);
 
-                            int rabbitToxicObjIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(rabbitToxicObjList[rabbitToxicObjIndex]);
+                         
+                            Instantiate(rabbitToxicObjList[randomIndex]);
 
                             break;
                         case "Hamster":
@@ -424,8 +422,7 @@ public class ActionSpawn : MonoBehaviour
                             hamsterToxicObjList.Add(hamsterToxicObjectWrong1);
                             hamsterToxicObjList.Add(hamsterToxicObjectWrong2);
 
-                            int hamsterToxicObjIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(hamsterToxicObjList[hamsterToxicObjIndex]);
+                            Instantiate(hamsterToxicObjList[randomIndex]);
 
                             break;
                     }
@@ -438,39 +435,32 @@ public class ActionSpawn : MonoBehaviour
                             catExerciseList.Add(catExerciseWrong1);
                             catExerciseList.Add(catExerciseWrong2);
 
-                            int catExerciseIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(catExerciseList[catExerciseIndex]);
-
+                            Instantiate(catExerciseList[randomIndex]);
                             break;
                         case "Dog":
                             dogExerciseList.Add(dogExerciseCorrect);
                             dogExerciseList.Add(dogExerciseWrong1);
                             dogExerciseList.Add(dogExerciseWrong2);
 
-                            int dogExerciseIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(dogExerciseList[dogExerciseIndex]);
-
+                            Instantiate(dogExerciseList[randomIndex]);
                             break;
                         case "Rabbit":
                             rabbitExerciseList.Add(rabbitExerciseCorrect);
                             rabbitExerciseList.Add(rabbitExerciseWrong1);
                             rabbitExerciseList.Add(rabbitExerciseWrong2);
 
-                            int rabbitExerciseIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(rabbitExerciseList[rabbitExerciseIndex]);
-
+                            Instantiate(rabbitExerciseList[randomIndex]);
                             break;
                         case "Hamster":
                             hamsterExerciseList.Add(hamsterExerciseCorrect);
                             hamsterExerciseList.Add(hamsterExerciseWrong1);
                             hamsterExerciseList.Add(hamsterExerciseWrong2);
 
-                            int hamsterExerciseIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(hamsterExerciseList[hamsterExerciseIndex]);
-
+                            Instantiate(hamsterExerciseList[randomIndex]);
                             break;
                     }
                     break;
+
                 case 5: // Hygiene
                     switch (animalText)
                     {
@@ -479,39 +469,32 @@ public class ActionSpawn : MonoBehaviour
                             catHygieneList.Add(catHygieneWrong1);
                             catHygieneList.Add(catHygieneWrong2);
 
-                            int catHygieneIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(catHygieneList[catHygieneIndex]);
-
+                            Instantiate(catHygieneList[randomIndex]);
                             break;
                         case "Dog":
                             dogHygieneList.Add(dogHygieneCorrect);
                             dogHygieneList.Add(dogHygieneWrong1);
                             dogHygieneList.Add(dogHygieneWrong2);
 
-                            int dogHygieneIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(dogHygieneList[dogHygieneIndex]);
-
+                            Instantiate(dogHygieneList[randomIndex]);
                             break;
                         case "Rabbit":
                             rabbitHygieneList.Add(rabbitHygieneCorrect);
                             rabbitHygieneList.Add(rabbitHygieneWrong1);
                             rabbitHygieneList.Add(rabbitHygieneWrong2);
 
-                            int rabbitHygieneIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(rabbitHygieneList[rabbitHygieneIndex]);
-
+                            Instantiate(rabbitHygieneList[randomIndex]);
                             break;
                         case "Hamster":
                             hamsterHygieneList.Add(hamsterHygieneCorrect);
                             hamsterHygieneList.Add(hamsterHygieneWrong1);
                             hamsterHygieneList.Add(hamsterHygieneWrong2);
 
-                            int hamsterHygieneIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(hamsterHygieneList[hamsterHygieneIndex]);
-
+                            Instantiate(hamsterHygieneList[randomIndex]);
                             break;
                     }
                     break;
+
                 case 6: // Enrichment
                     switch (animalText)
                     {
@@ -520,39 +503,32 @@ public class ActionSpawn : MonoBehaviour
                             catEnrichmentList.Add(catEnrichmentWrong1);
                             catEnrichmentList.Add(catEnrichmentWrong2);
 
-                            int catEnrichmentIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(catEnrichmentList[catEnrichmentIndex]);
-
+                            Instantiate(catEnrichmentList[randomIndex]);
                             break;
                         case "Dog":
                             dogEnrichmentList.Add(dogEnrichmentCorrect);
                             dogEnrichmentList.Add(dogEnrichmentWrong1);
                             dogEnrichmentList.Add(dogEnrichmentWrong2);
 
-                            int dogEnrichmentIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(dogEnrichmentList[dogEnrichmentIndex]);
-
+                            Instantiate(dogEnrichmentList[randomIndex]);
                             break;
                         case "Rabbit":
                             rabbitEnrichmentList.Add(rabbitEnrichmentCorrect);
                             rabbitEnrichmentList.Add(rabbitEnrichmentWrong1);
                             rabbitEnrichmentList.Add(rabbitEnrichmentWrong2);
 
-                            int rabbitEnrichmentIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(rabbitEnrichmentList[rabbitEnrichmentIndex]);
-
+                            Instantiate(rabbitEnrichmentList[randomIndex]);
                             break;
                         case "Hamster":
                             hamsterEnrichmentList.Add(hamsterEnrichmentCorrect);
                             hamsterEnrichmentList.Add(hamsterEnrichmentWrong1);
                             hamsterEnrichmentList.Add(hamsterEnrichmentWrong2);
 
-                            int hamsterEnrichmentIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(hamsterEnrichmentList[hamsterEnrichmentIndex]);
-
+                            Instantiate(hamsterEnrichmentList[randomIndex]);
                             break;
                     }
                     break;
+
                 case 7: // Health Screening
                     switch (animalText)
                     {
@@ -561,39 +537,32 @@ public class ActionSpawn : MonoBehaviour
                             catHealthScreeningList.Add(catHeatlhScreeningWrong1);
                             catHealthScreeningList.Add(catHealthScreeningWrong2);
 
-                            int catHealthScreeningIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(catHealthScreeningList[catHealthScreeningIndex]);
-
+                            Instantiate(catHealthScreeningList[randomIndex]);
                             break;
                         case "Dog":
                             dogHealthScreeningList.Add(dogHealthScreeningCorrect);
                             dogHealthScreeningList.Add(dogHealthScreeningWrong1);
                             dogHealthScreeningList.Add(dogHealthScreeningWrong2);
 
-                            int dogHealthScreeningIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(dogHealthScreeningList[dogHealthScreeningIndex]);
-
+                            Instantiate(dogHealthScreeningList[randomIndex]);
                             break;
                         case "Rabbit":
                             rabbitHealthScreeningList.Add(rabbitHealthScreeningCorrect);
                             rabbitHealthScreeningList.Add(rabbitHeatlhScreeningWrong1);
                             rabbitHealthScreeningList.Add(rabbitHealthScreeningWrong2);
 
-                            int rabbitHealthScreeningIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(rabbitHealthScreeningList[rabbitHealthScreeningIndex]);
-
+                            Instantiate(rabbitHealthScreeningList[randomIndex]);
                             break;
                         case "Hamster":
                             hamsterHealthScreeningList.Add(hamsterHealthScreeningCorrect);
                             hamsterHealthScreeningList.Add(hamsterHeatlhScreeningWrong1);
                             hamsterHealthScreeningList.Add(hamsterHealthScreeningWrong2);
 
-                            int hamsterHealthScreeningIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(hamsterHealthScreeningList[hamsterHealthScreeningIndex]);
-
+                            Instantiate(hamsterHealthScreeningList[randomIndex]);
                             break;
                     }
                     break;
+
                 case 8: // Materials
                     switch (animalText)
                     {
@@ -602,36 +571,28 @@ public class ActionSpawn : MonoBehaviour
                             catMaterialsList.Add(catMaterialsWrong1);
                             catMaterialsList.Add(catMaterialsWrong2);
 
-                            int catMaterialsIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(catMaterialsList[catMaterialsIndex]);
-
+                            Instantiate(catMaterialsList[randomIndex]);
                             break;
                         case "Dog":
                             dogMaterialsList.Add(dogMaterialsCorrect);
                             dogMaterialsList.Add(dogMaterialsWrong1);
                             dogMaterialsList.Add(dogMaterialsWrong2);
 
-                            int dogMaterialsIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(dogMaterialsList[dogMaterialsIndex]);
-
+                            Instantiate(dogMaterialsList[randomIndex]);
                             break;
                         case "Rabbit":
                             rabbitMaterialsList.Add(rabbitMaterialsCorrect);
                             rabbitMaterialsList.Add(rabbitMaterialsWrong1);
                             rabbitMaterialsList.Add(rabbitMaterialsWrong2);
 
-                            int rabbitMaterialsIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(rabbitMaterialsList[rabbitMaterialsIndex]);
-
+                            Instantiate(rabbitMaterialsList[randomIndex]);
                             break;
                         case "Hamster":
                             hamsterMaterialsList.Add(hamsterMaterialsCorrect);
                             hamsterMaterialsList.Add(hamsterMaterialsWrong1);
                             hamsterMaterialsList.Add(hamsterMaterialsWrong2);
 
-                            int hamsterMaterialsIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(hamsterMaterialsList[hamsterMaterialsIndex]);
-
+                            Instantiate(hamsterMaterialsList[randomIndex]);
                             break;
                     }
                     break;
