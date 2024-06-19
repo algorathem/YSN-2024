@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+//using TMPro;
 
 public class ActionFlipAnim : MonoBehaviour
 {
@@ -11,16 +11,17 @@ public class ActionFlipAnim : MonoBehaviour
     private Sprite faceSprite, backSprite;
     private bool coroutineAllowed, facedUp;
 
-    //public TextMeshProUGUI situationDescriptionText;
+    //public TextMeshProUGUI optionDescriptionText;
     //public TextMeshProUGUI topicText;
-    //public string[] situationDescription = new string[9];
+    //public string[] optionDescription = new string[3];
     //public static int topicIndex;
     //private string[] allTopics = new string[9];
+    public bool isCorrect;
 
 
     void Awake()
     {
-
+        //optionDescriptionText = GameObject.FindGameObjectWithTag("Option").GetComponent<TextMeshProUGUI>();
         //allTopics[0] = "Food";
         //allTopics[1] = "Habitats";
         //allTopics[2] = "Personality";
@@ -104,9 +105,5 @@ public class ActionFlipAnim : MonoBehaviour
     {
 
     }
-    //need for loop for action card
-    //card movement animatiom, attach to all cards
-    //instantiate 3 action cards on same location.
-    //icon to persist at the bottom to run out of cards
-    //for(actual_card_index==0;actual_card_index<=Count_of_cards;actual_card_index++) 
+
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -4309702419858319248}
   m_Layer: 0
   m_Name: hamster_card
-  m_TagString: Hamster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
