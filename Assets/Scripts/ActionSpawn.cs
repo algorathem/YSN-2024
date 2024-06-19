@@ -273,7 +273,7 @@ public class ActionSpawn : MonoBehaviour
                             catFoodList.Add(catFoodWrong2);
 
                             
-                            Instantiate(catFoodList[randomIndex]);
+                            Instantiate(catFoodList[randomIndex], transform.position, Quaternion.identity);
 
                             break;
                         case "Dog":
@@ -282,7 +282,7 @@ public class ActionSpawn : MonoBehaviour
                             dogFoodList.Add(dogFoodWrong2);
 
                             //int dogFoodIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(dogFoodList[randomIndex]);
+                            Instantiate(dogFoodList[randomIndex],transform.position, Quaternion.identity);
 
                             break;
                         case "Rabbit":
@@ -291,7 +291,7 @@ public class ActionSpawn : MonoBehaviour
                             rabbitFoodList.Add(rabbitFoodWrong2);
 
                             //int rabbitFoodIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(rabbitFoodList[randomIndex]);
+                            Instantiate(rabbitFoodList[randomIndex], transform.position, Quaternion.identity);
 
                             break;
                         case "Hamster":
@@ -300,7 +300,7 @@ public class ActionSpawn : MonoBehaviour
                             hamsterFoodList.Add(hamsterFoodWrong2);
 
                             //int hamsterFoodIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(hamsterFoodList[randomIndex]);
+                            Instantiate(hamsterFoodList[randomIndex], transform.position, Quaternion.identity);
 
                             break;
                     }
@@ -314,7 +314,7 @@ public class ActionSpawn : MonoBehaviour
                             catHabitatList.Add(catHabitatWrong2);
 
                             //int catHabitatIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(catHabitatList[randomIndex]);
+                            Instantiate(catHabitatList[randomIndex], transform.position, Quaternion.identity);
 
                             break;
                         case "Dog":
@@ -323,7 +323,7 @@ public class ActionSpawn : MonoBehaviour
                             dogHabitatList.Add(dogHabitatWrong2);
 
                             //int dogHabitatIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(dogHabitatList[randomIndex]);
+                            Instantiate(dogHabitatList[randomIndex], transform.position, Quaternion.identity);
 
                             break;
                         case "Rabbit":
@@ -332,7 +332,7 @@ public class ActionSpawn : MonoBehaviour
                             rabbitHabitatList.Add(rabbitHabitatWrong2);
 
                             //int rabbitHabitatIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(rabbitHabitatList[randomIndex]);
+                            Instantiate(rabbitHabitatList[randomIndex], transform.position, Quaternion.identity);
 
                             break;
                         case "Hamster":
@@ -341,7 +341,7 @@ public class ActionSpawn : MonoBehaviour
                             hamsterHabitatList.Add(hamsterHabitatWrong2);
 
                             //int hamsterHabitatIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(hamsterHabitatList[randomIndex]);
+                            Instantiate(hamsterHabitatList[randomIndex], transform.position, Quaternion.identity);
 
                             break;
                     }
@@ -355,7 +355,7 @@ public class ActionSpawn : MonoBehaviour
                             catPersonalityList.Add(catPersonalityWrong2);
 
                             
-                            Instantiate(catPersonalityList[randomIndex]);
+                            Instantiate(catPersonalityList[randomIndex], transform.position, Quaternion.identity);
 
                             break;
                         case "Dog":
@@ -364,7 +364,7 @@ public class ActionSpawn : MonoBehaviour
                             dogPersonalityList.Add(dogPersonalityWrong2);
 
                             //int dogPersonalityIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(dogPersonalityList[randomIndex]);
+                            Instantiate(dogPersonalityList[randomIndex], transform.position, Quaternion.identity);
 
                             break;
                         case "Rabbit":
@@ -373,7 +373,7 @@ public class ActionSpawn : MonoBehaviour
                             rabbitPersonalityList.Add(rabbitPersonalityWrong2);
 
                             //int rabbitPersonalityIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(rabbitPersonalityList[randomIndex]);
+                            Instantiate(rabbitPersonalityList[randomIndex], transform.position, Quaternion.identity);
 
                             break;
                         case "Hamster":
@@ -382,7 +382,7 @@ public class ActionSpawn : MonoBehaviour
                             hamsterPersonalityList.Add(hamsterPersonalityWrong2);
 
                             //int hamsterPersonalityIndex = UnityEngine.Random.Range(0, 3);
-                            Instantiate(hamsterPersonalityList[randomIndex]);
+                            Instantiate(hamsterPersonalityList[randomIndex], transform.position, Quaternion.identity);
 
                             break;
                     }
@@ -395,8 +395,7 @@ public class ActionSpawn : MonoBehaviour
                             catToxicObjList.Add(catToxicObjectWrong1);
                             catToxicObjList.Add(catToxicObjectWrong2);
 
-                           
-                            Instantiate(catToxicObjList[randomIndex]);
+                            Instantiate(catToxicObjList[randomIndex], transform.position, Quaternion.identity);
 
                             break;
                         case "Dog":
@@ -404,8 +403,7 @@ public class ActionSpawn : MonoBehaviour
                             dogToxicObjList.Add(dogToxicObjectWrong1);
                             dogToxicObjList.Add(dogToxicObjectWrong2);
 
-                 
-                            Instantiate(dogToxicObjList[randomIndex]);
+                            Instantiate(dogToxicObjList[randomIndex], transform.position, Quaternion.identity);
 
                             break;
                         case "Rabbit":
@@ -413,8 +411,7 @@ public class ActionSpawn : MonoBehaviour
                             rabbitToxicObjList.Add(rabbitToxicObjectWrong1);
                             rabbitToxicObjList.Add(rabbitToxicObjectWrong2);
 
-                         
-                            Instantiate(rabbitToxicObjList[randomIndex]);
+                            Instantiate(rabbitToxicObjList[randomIndex], transform.position, Quaternion.identity);
 
                             break;
                         case "Hamster":
@@ -422,7 +419,7 @@ public class ActionSpawn : MonoBehaviour
                             hamsterToxicObjList.Add(hamsterToxicObjectWrong1);
                             hamsterToxicObjList.Add(hamsterToxicObjectWrong2);
 
-                            Instantiate(hamsterToxicObjList[randomIndex]);
+                            Instantiate(hamsterToxicObjList[randomIndex], transform.position, Quaternion.identity);
 
                             break;
                     }
@@ -435,28 +432,28 @@ public class ActionSpawn : MonoBehaviour
                             catExerciseList.Add(catExerciseWrong1);
                             catExerciseList.Add(catExerciseWrong2);
 
-                            Instantiate(catExerciseList[randomIndex]);
+                            Instantiate(catExerciseList[randomIndex], transform.position, Quaternion.identity);
                             break;
                         case "Dog":
                             dogExerciseList.Add(dogExerciseCorrect);
                             dogExerciseList.Add(dogExerciseWrong1);
                             dogExerciseList.Add(dogExerciseWrong2);
 
-                            Instantiate(dogExerciseList[randomIndex]);
+                            Instantiate(dogExerciseList[randomIndex], transform.position, Quaternion.identity);
                             break;
                         case "Rabbit":
                             rabbitExerciseList.Add(rabbitExerciseCorrect);
                             rabbitExerciseList.Add(rabbitExerciseWrong1);
                             rabbitExerciseList.Add(rabbitExerciseWrong2);
 
-                            Instantiate(rabbitExerciseList[randomIndex]);
+                            Instantiate(rabbitExerciseList[randomIndex], transform.position, Quaternion.identity);
                             break;
                         case "Hamster":
                             hamsterExerciseList.Add(hamsterExerciseCorrect);
                             hamsterExerciseList.Add(hamsterExerciseWrong1);
                             hamsterExerciseList.Add(hamsterExerciseWrong2);
 
-                            Instantiate(hamsterExerciseList[randomIndex]);
+                            Instantiate(hamsterExerciseList[randomIndex], transform.position, Quaternion.identity);
                             break;
                     }
                     break;
@@ -469,28 +466,28 @@ public class ActionSpawn : MonoBehaviour
                             catHygieneList.Add(catHygieneWrong1);
                             catHygieneList.Add(catHygieneWrong2);
 
-                            Instantiate(catHygieneList[randomIndex]);
+                            Instantiate(catHygieneList[randomIndex], transform.position, Quaternion.identity);
                             break;
                         case "Dog":
                             dogHygieneList.Add(dogHygieneCorrect);
                             dogHygieneList.Add(dogHygieneWrong1);
                             dogHygieneList.Add(dogHygieneWrong2);
 
-                            Instantiate(dogHygieneList[randomIndex]);
+                            Instantiate(dogHygieneList[randomIndex], transform.position, Quaternion.identity);
                             break;
                         case "Rabbit":
                             rabbitHygieneList.Add(rabbitHygieneCorrect);
                             rabbitHygieneList.Add(rabbitHygieneWrong1);
                             rabbitHygieneList.Add(rabbitHygieneWrong2);
 
-                            Instantiate(rabbitHygieneList[randomIndex]);
+                            Instantiate(rabbitHygieneList[randomIndex], transform.position, Quaternion.identity);
                             break;
                         case "Hamster":
                             hamsterHygieneList.Add(hamsterHygieneCorrect);
                             hamsterHygieneList.Add(hamsterHygieneWrong1);
                             hamsterHygieneList.Add(hamsterHygieneWrong2);
 
-                            Instantiate(hamsterHygieneList[randomIndex]);
+                            Instantiate(hamsterHygieneList[randomIndex], transform.position, Quaternion.identity);
                             break;
                     }
                     break;
@@ -503,28 +500,28 @@ public class ActionSpawn : MonoBehaviour
                             catEnrichmentList.Add(catEnrichmentWrong1);
                             catEnrichmentList.Add(catEnrichmentWrong2);
 
-                            Instantiate(catEnrichmentList[randomIndex]);
+                            Instantiate(catEnrichmentList[randomIndex], transform.position, Quaternion.identity);
                             break;
                         case "Dog":
                             dogEnrichmentList.Add(dogEnrichmentCorrect);
                             dogEnrichmentList.Add(dogEnrichmentWrong1);
                             dogEnrichmentList.Add(dogEnrichmentWrong2);
 
-                            Instantiate(dogEnrichmentList[randomIndex]);
+                            Instantiate(dogEnrichmentList[randomIndex], transform.position, Quaternion.identity);
                             break;
                         case "Rabbit":
                             rabbitEnrichmentList.Add(rabbitEnrichmentCorrect);
                             rabbitEnrichmentList.Add(rabbitEnrichmentWrong1);
                             rabbitEnrichmentList.Add(rabbitEnrichmentWrong2);
 
-                            Instantiate(rabbitEnrichmentList[randomIndex]);
+                            Instantiate(rabbitEnrichmentList[randomIndex], transform.position, Quaternion.identity);
                             break;
                         case "Hamster":
                             hamsterEnrichmentList.Add(hamsterEnrichmentCorrect);
                             hamsterEnrichmentList.Add(hamsterEnrichmentWrong1);
                             hamsterEnrichmentList.Add(hamsterEnrichmentWrong2);
 
-                            Instantiate(hamsterEnrichmentList[randomIndex]);
+                            Instantiate(hamsterEnrichmentList[randomIndex], transform.position, Quaternion.identity);
                             break;
                     }
                     break;
@@ -537,28 +534,28 @@ public class ActionSpawn : MonoBehaviour
                             catHealthScreeningList.Add(catHeatlhScreeningWrong1);
                             catHealthScreeningList.Add(catHealthScreeningWrong2);
 
-                            Instantiate(catHealthScreeningList[randomIndex]);
+                            Instantiate(catHealthScreeningList[randomIndex], transform.position, Quaternion.identity);
                             break;
                         case "Dog":
                             dogHealthScreeningList.Add(dogHealthScreeningCorrect);
                             dogHealthScreeningList.Add(dogHealthScreeningWrong1);
                             dogHealthScreeningList.Add(dogHealthScreeningWrong2);
 
-                            Instantiate(dogHealthScreeningList[randomIndex]);
+                            Instantiate(dogHealthScreeningList[randomIndex], transform.position, Quaternion.identity);
                             break;
                         case "Rabbit":
                             rabbitHealthScreeningList.Add(rabbitHealthScreeningCorrect);
                             rabbitHealthScreeningList.Add(rabbitHeatlhScreeningWrong1);
                             rabbitHealthScreeningList.Add(rabbitHealthScreeningWrong2);
 
-                            Instantiate(rabbitHealthScreeningList[randomIndex]);
+                            Instantiate(rabbitHealthScreeningList[randomIndex], transform.position, Quaternion.identity);
                             break;
                         case "Hamster":
                             hamsterHealthScreeningList.Add(hamsterHealthScreeningCorrect);
                             hamsterHealthScreeningList.Add(hamsterHeatlhScreeningWrong1);
                             hamsterHealthScreeningList.Add(hamsterHealthScreeningWrong2);
 
-                            Instantiate(hamsterHealthScreeningList[randomIndex]);
+                            Instantiate(hamsterHealthScreeningList[randomIndex], transform.position, Quaternion.identity);
                             break;
                     }
                     break;
@@ -571,31 +568,33 @@ public class ActionSpawn : MonoBehaviour
                             catMaterialsList.Add(catMaterialsWrong1);
                             catMaterialsList.Add(catMaterialsWrong2);
 
-                            Instantiate(catMaterialsList[randomIndex]);
+                            Instantiate(catMaterialsList[randomIndex], transform.position, Quaternion.identity);
                             break;
                         case "Dog":
                             dogMaterialsList.Add(dogMaterialsCorrect);
                             dogMaterialsList.Add(dogMaterialsWrong1);
                             dogMaterialsList.Add(dogMaterialsWrong2);
 
-                            Instantiate(dogMaterialsList[randomIndex]);
+                            Instantiate(dogMaterialsList[randomIndex], transform.position, Quaternion.identity);
                             break;
                         case "Rabbit":
                             rabbitMaterialsList.Add(rabbitMaterialsCorrect);
                             rabbitMaterialsList.Add(rabbitMaterialsWrong1);
                             rabbitMaterialsList.Add(rabbitMaterialsWrong2);
 
-                            Instantiate(rabbitMaterialsList[randomIndex]);
+                            Instantiate(rabbitMaterialsList[randomIndex], transform.position, Quaternion.identity);
                             break;
                         case "Hamster":
                             hamsterMaterialsList.Add(hamsterMaterialsCorrect);
                             hamsterMaterialsList.Add(hamsterMaterialsWrong1);
                             hamsterMaterialsList.Add(hamsterMaterialsWrong2);
 
-                            Instantiate(hamsterMaterialsList[randomIndex]);
+                            Instantiate(hamsterMaterialsList[randomIndex], transform.position, Quaternion.identity);
                             break;
                     }
                     break;
+
+                  
             }
 
             actionCardCount++;
