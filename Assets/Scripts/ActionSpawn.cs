@@ -258,7 +258,7 @@ public class ActionSpawn : MonoBehaviour
     public void OnMouseDown()
     {
         topicIndex = CardFlipAnim.topicIndex;
-        
+        print("click once");
         int randomIndex = GetUniqueRandomIndex();
         if (actionCardCount < 3)
         {
