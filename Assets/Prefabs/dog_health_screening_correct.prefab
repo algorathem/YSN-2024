@@ -394,6 +394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faceSprite: {fileID: -3620658920443962820, guid: 60853a353962bb34bbebe5583e8bde01, type: 3}
   backSprite: {fileID: 4956484290247199680, guid: 60853a353962bb34bbebe5583e8bde01, type: 3}
+  isCorrect: 1
 --- !u!114 &-3970714546171641020
 MonoBehaviour:
   m_ObjectHideFlags: 0
