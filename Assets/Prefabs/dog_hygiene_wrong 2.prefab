@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 2165247793922279046}
   - component: {fileID: -3970714546171641020}
   m_Layer: 0
-  m_Name: dog_action
+  m_Name: dog_hygiene_wrong 2
   m_TagString: ActionCard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

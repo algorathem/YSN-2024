@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 7319543117854852958}
   - component: {fileID: -5310265746755934059}
   m_Layer: 0
-  m_Name: rabbit_action
+  m_Name: rabbit_toxic_obj correct
   m_TagString: ActionCard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

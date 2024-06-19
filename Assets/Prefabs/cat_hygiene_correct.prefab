@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1463681538134174377}
   - component: {fileID: 6168809768838650558}
   m_Layer: 0
-  m_Name: cat_action
+  m_Name: cat_hygiene_correct
   m_TagString: ActionCard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

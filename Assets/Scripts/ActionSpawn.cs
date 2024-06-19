@@ -2,92 +2,643 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ActionSpawn : MonoBehaviour
 {
-    List<GameObject> catActionList = new List<GameObject>();
-    public GameObject cat1;
-    public GameObject cat2;
-    public GameObject cat3;
-    //public GameObject catAction;
-    List<GameObject> dogActionList = new List<GameObject>();
-    public GameObject dog1;
-    public GameObject dog2;
-    public GameObject dog3;
-    //public GameObject dogAction;
-    List<GameObject> rabbitActionList = new List<GameObject>();
-    public GameObject rabbit1;
-    public GameObject rabbit2;
-    public GameObject rabbit3;
-    //public GameObject rabbitAction;
-    List<GameObject> hamsterActionList = new List<GameObject>();
-    public GameObject hamster1;
-    public GameObject hamster2;
-    public GameObject hamster3;
-    //public GameObject hamsterAction;
+    //Cat Cards
+    List<GameObject> catFoodList = new List<GameObject>();
+    public GameObject catFoodCorrect;
+    public GameObject catFoodWrong1;
+    public GameObject catFoodWrong2;
+
+    List<GameObject> catHabitatList = new List<GameObject>();
+    public GameObject catHabitatCorrect;
+    public GameObject catHabitatWrong1;
+    public GameObject catHabitatWrong2;
+
+    List<GameObject> catPersonalityList = new List<GameObject>();
+    public GameObject catPersonalityCorrect;
+    public GameObject catPersonalityWrong1;
+    public GameObject catPersonalityWrong2;
+
+    List<GameObject> catToxicObjList = new List<GameObject>();
+    public GameObject catToxicObjCorrect;
+    public GameObject catToxicObjectWrong1;
+    public GameObject catToxicObjectWrong2;
+
+    List<GameObject> catExerciseList = new List<GameObject>();
+    public GameObject catExerciseCorrect;
+    public GameObject catExerciseWrong1;
+    public GameObject catExerciseWrong2;
+
+    List<GameObject> catHygieneList = new List<GameObject>();
+    public GameObject catHygieneCorrect;
+    public GameObject catHygieneWrong1;
+    public GameObject catHygieneWrong2;
+
+    List<GameObject> catEnrichmentList = new List<GameObject>();
+    public GameObject catEnrichmentCorrect;
+    public GameObject catEnrichmentWrong1;
+    public GameObject catEnrichmentWrong2;
+
+    List<GameObject> catHealthScreeningList = new List<GameObject>();
+    public GameObject catHealthScreeningCorrect;
+    public GameObject catHeatlhScreeningWrong1;
+    public GameObject catHealthScreeningWrong2;
+
+    List<GameObject> catMaterialsList = new List<GameObject>();
+    public GameObject catMaterialsCorrect;
+    public GameObject catMaterialsWrong1;
+    public GameObject catMaterialsWrong2;
+
+    //Dog Cards
+    List<GameObject> dogFoodList = new List<GameObject>();
+    public GameObject dogFoodCorrect;
+    public GameObject dogFoodWrong1;
+    public GameObject dogFoodWrong2;
+
+    List<GameObject> dogHabitatList = new List<GameObject>();
+    public GameObject dogHabitatCorrect;
+    public GameObject dogHabitatWrong1;
+    public GameObject dogHabitatWrong2;
+
+    List<GameObject> dogPersonalityList = new List<GameObject>();
+    public GameObject dogPersonalityCorrect;
+    public GameObject dogPersonalityWrong1;
+    public GameObject dogPersonalityWrong2;
+
+    List<GameObject> dogToxicObjList = new List<GameObject>();
+    public GameObject dogToxicObjCorrect;
+    public GameObject dogToxicObjectWrong1;
+    public GameObject dogToxicObjectWrong2;
+
+    List<GameObject> dogExerciseList = new List<GameObject>();
+    public GameObject dogExerciseCorrect;
+    public GameObject dogExerciseWrong1;
+    public GameObject dogExerciseWrong2;
+
+    List<GameObject> dogHygieneList = new List<GameObject>();
+    public GameObject dogHygieneCorrect;
+    public GameObject dogHygieneWrong1;
+    public GameObject dogHygieneWrong2;
+
+    List<GameObject> dogEnrichmentList = new List<GameObject>();
+    public GameObject dogEnrichmentCorrect;
+    public GameObject dogEnrichmentWrong1;
+    public GameObject dogEnrichmentWrong2;
+
+    List<GameObject> dogHealthScreeningList = new List<GameObject>();
+    public GameObject dogHealthScreeningCorrect;
+    public GameObject dogHealthScreeningWrong1;
+    public GameObject dogHealthScreeningWrong2;
+
+    List<GameObject> dogMaterialsList = new List<GameObject>();
+    public GameObject dogMaterialsCorrect;
+    public GameObject dogMaterialsWrong1;
+    public GameObject dogMaterialsWrong2;
+
+
+    //Rabbit Cards
+    List<GameObject> rabbitFoodList = new List<GameObject>();
+    public GameObject rabbitFoodCorrect;
+    public GameObject rabbitFoodWrong1;
+    public GameObject rabbitFoodWrong2;
+
+    List<GameObject> rabbitHabitatList = new List<GameObject>();
+    public GameObject rabbitHabitatCorrect;
+    public GameObject rabbitHabitatWrong1;
+    public GameObject rabbitHabitatWrong2;
+
+    List<GameObject> rabbitPersonalityList = new List<GameObject>();
+    public GameObject rabbitPersonalityCorrect;
+    public GameObject rabbitPersonalityWrong1;
+    public GameObject rabbitPersonalityWrong2;
+
+    List<GameObject> rabbitToxicObjList = new List<GameObject>();
+    public GameObject rabbitToxicObjCorrect;
+    public GameObject rabbitToxicObjectWrong1;
+    public GameObject rabbitToxicObjectWrong2;
+
+    List<GameObject> rabbitExerciseList = new List<GameObject>();
+    public GameObject rabbitExerciseCorrect;
+    public GameObject rabbitExerciseWrong1;
+    public GameObject rabbitExerciseWrong2;
+
+    List<GameObject> rabbitHygieneList = new List<GameObject>();
+    public GameObject rabbitHygieneCorrect;
+    public GameObject rabbitHygieneWrong1;
+    public GameObject rabbitHygieneWrong2;
+
+    List<GameObject> rabbitEnrichmentList = new List<GameObject>();
+    public GameObject rabbitEnrichmentCorrect;
+    public GameObject rabbitEnrichmentWrong1;
+    public GameObject rabbitEnrichmentWrong2;
+
+    List<GameObject> rabbitHealthScreeningList = new List<GameObject>();
+    public GameObject rabbitHealthScreeningCorrect;
+    public GameObject rabbitHeatlhScreeningWrong1;
+    public GameObject rabbitHealthScreeningWrong2;
+
+    List<GameObject> rabbitMaterialsList = new List<GameObject>();
+    public GameObject rabbitMaterialsCorrect;
+    public GameObject rabbitMaterialsWrong1;
+    public GameObject rabbitMaterialsWrong2;
+
+
+
+    //Hamster Cards
+    List<GameObject> hamsterFoodList = new List<GameObject>();
+    public GameObject hamsterFoodCorrect;
+    public GameObject hamsterFoodWrong1;
+    public GameObject hamsterFoodWrong2;
+
+    List<GameObject> hamsterHabitatList = new List<GameObject>();
+    public GameObject hamsterHabitatCorrect;
+    public GameObject hamsterHabitatWrong1;
+    public GameObject hamsterHabitatWrong2;
+
+    List<GameObject> hamsterPersonalityList = new List<GameObject>();
+    public GameObject hamsterPersonalityCorrect;
+    public GameObject hamsterPersonalityWrong1;
+    public GameObject hamsterPersonalityWrong2;
+
+    List<GameObject> hamsterToxicObjList = new List<GameObject>();
+    public GameObject hamsterToxicObjCorrect;
+    public GameObject hamsterToxicObjectWrong1;
+    public GameObject hamsterToxicObjectWrong2;
+
+    List<GameObject> hamsterExerciseList = new List<GameObject>();
+    public GameObject hamsterExerciseCorrect;
+    public GameObject hamsterExerciseWrong1;
+    public GameObject hamsterExerciseWrong2;
+
+    List<GameObject> hamsterHygieneList = new List<GameObject>();
+    public GameObject hamsterHygieneCorrect;
+    public GameObject hamsterHygieneWrong1;
+    public GameObject hamsterHygieneWrong2;
+
+    List<GameObject> hamsterEnrichmentList = new List<GameObject>();
+    public GameObject hamsterEnrichmentCorrect;
+    public GameObject hamsterEnrichmentWrong1;
+    public GameObject hamsterEnrichmentWrong2;
+
+    List<GameObject> hamsterHealthScreeningList = new List<GameObject>();
+    public GameObject hamsterHealthScreeningCorrect;
+    public GameObject hamsterHeatlhScreeningWrong1;
+    public GameObject hamsterHealthScreeningWrong2;
+
+    List<GameObject> hamsterMaterialsList = new List<GameObject>();
+    public GameObject hamsterMaterialsCorrect;
+    public GameObject hamsterMaterialsWrong1;
+    public GameObject hamsterMaterialsWrong2;
+
+
 
     //public Canvas canvas;
 
     private int actionCardCount = 0;
     private string animalText;
-    
+    private int topicIndex;
+
+
+    // Declare class-level variables
+    private List<int> availableIndices; // List to store indices available for random selection
+    private int currentIndex = 0; // Current index in the shuffled list
+
     private void Awake()
     {
         animalText = GameObject.FindGameObjectWithTag("PersistentObj").GetComponent<PersistenceScript>().winText;
-        
+        InitializeIndices(3);
+
+
+
     }
 
-    // Update is called once per frame
-    void Update()
+    // Function to initialize available indices using Fisher-Yates shuffle
+    private void InitializeIndices(int count)
     {
-        
+        print("initialize indices...");
+        availableIndices = new List<int>();
+        for (int i = 0; i < count; i++)
+        {
+            availableIndices.Add(i);
+        }
+        Shuffle(availableIndices); // Shuffle the list of indices
+        currentIndex = 0; // Reset current index to start of shuffled list
     }
+
+    // Fisher-Yates shuffle algorithm
+    private void Shuffle(List<int> list)
+    {
+        print("shuffle...");
+        for (int i = list.Count - 1; i > 0; i--)
+        {
+            int randomIndex = UnityEngine.Random.Range(0, i + 1); // Pick a random index from 0 to i
+            int temp = list[i]; // Swap list[i] and list[randomIndex]
+            list[i] = list[randomIndex];
+            list[randomIndex] = temp;
+        }
+    }
+
+    // Function to get the next unique random index
+    private int GetUniqueRandomIndex()
+    {
+        print("getting unique random index...");
+        if (currentIndex >= availableIndices.Count)
+        {
+            Debug.LogWarning("All indices have been used. Reshuffling...");
+            InitializeIndices(3); // Adjust the count based on your number of prefabs
+        }
+
+        int randomIndex = availableIndices[currentIndex];
+        currentIndex++; // Move to the next index in the shuffled list
+
+        return randomIndex;
+    }
+
 
     public void OnMouseDown()
     {
-
+        topicIndex = CardFlipAnim.topicIndex;
+        
+        int randomIndex = GetUniqueRandomIndex();
         if (actionCardCount < 3)
         {
-            switch (animalText)
+            switch (topicIndex)
             {
-                case "Cat":
-                    //Instantiate(catAction, transform.position, Quaternion.identity);
-                    catActionList.Add(cat1);
-                    catActionList.Add(cat2);
-                    catActionList.Add(cat3);
+                case 0: // Food
+                    switch (animalText)
+                    {
+                        case "Cat":
+                            catFoodList.Add(catFoodCorrect);
+                            catFoodList.Add(catFoodWrong1);
+                            catFoodList.Add(catFoodWrong2);
 
-                    int catIndex = UnityEngine.Random.Range(0, 3);
-                    Instantiate(catActionList[catIndex]);
+                            
+                            Instantiate(catFoodList[randomIndex]);
 
+                            break;
+                        case "Dog":
+                            dogFoodList.Add(dogFoodCorrect);
+                            dogFoodList.Add(dogFoodWrong1);
+                            dogFoodList.Add(dogFoodWrong2);
+
+                            //int dogFoodIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(dogFoodList[randomIndex]);
+
+                            break;
+                        case "Rabbit":
+                            rabbitFoodList.Add(rabbitFoodCorrect);
+                            rabbitFoodList.Add(rabbitFoodWrong1);
+                            rabbitFoodList.Add(rabbitFoodWrong2);
+
+                            //int rabbitFoodIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(rabbitFoodList[randomIndex]);
+
+                            break;
+                        case "Hamster":
+                            hamsterFoodList.Add(hamsterFoodCorrect);
+                            hamsterFoodList.Add(hamsterFoodWrong1);
+                            hamsterFoodList.Add(hamsterFoodWrong2);
+
+                            //int hamsterFoodIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(hamsterFoodList[randomIndex]);
+
+                            break;
+                    }
                     break;
-                case "Dog":
-                    //Instantiate(dogAction, transform.position, Quaternion.identity);
-                    dogActionList.Add(dog1);
-                    dogActionList.Add(dog2);
-                    dogActionList.Add(dog3);
+                case 1: // Habitats
+                    switch (animalText)
+                    {
+                        case "Cat":
+                            catHabitatList.Add(catHabitatCorrect);
+                            catHabitatList.Add(catHabitatWrong1);
+                            catHabitatList.Add(catHabitatWrong2);
 
-                    int dogIndex = UnityEngine.Random.Range(0, 3);
-                    Instantiate(dogActionList[dogIndex]);
+                            //int catHabitatIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(catHabitatList[randomIndex]);
+
+                            break;
+                        case "Dog":
+                            dogHabitatList.Add(dogHabitatCorrect);
+                            dogHabitatList.Add(dogHabitatWrong1);
+                            dogHabitatList.Add(dogHabitatWrong2);
+
+                            //int dogHabitatIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(dogHabitatList[randomIndex]);
+
+                            break;
+                        case "Rabbit":
+                            rabbitHabitatList.Add(rabbitHabitatCorrect);
+                            rabbitHabitatList.Add(rabbitHabitatWrong1);
+                            rabbitHabitatList.Add(rabbitHabitatWrong2);
+
+                            //int rabbitHabitatIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(rabbitHabitatList[randomIndex]);
+
+                            break;
+                        case "Hamster":
+                            hamsterHabitatList.Add(hamsterHabitatCorrect);
+                            hamsterHabitatList.Add(hamsterHabitatWrong1);
+                            hamsterHabitatList.Add(hamsterHabitatWrong2);
+
+                            //int hamsterHabitatIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(hamsterHabitatList[randomIndex]);
+
+                            break;
+                    }
                     break;
-                case "Rabbit":
-                    //Instantiate(rabbitAction, transform.position, Quaternion.identity);
-                    rabbitActionList.Add(rabbit1);
-                    rabbitActionList.Add(rabbit2);
-                    rabbitActionList.Add(rabbit3);
+                case 2: // Personality
+                    switch (animalText)
+                    {
+                        case "Cat":
+                            catPersonalityList.Add(catPersonalityCorrect);
+                            catPersonalityList.Add(catPersonalityWrong1);
+                            catPersonalityList.Add(catPersonalityWrong2);
 
-                    int rabbitIndex = UnityEngine.Random.Range(0, 3);
-                    Instantiate(rabbitActionList[rabbitIndex]);
+                            
+                            Instantiate(catPersonalityList[randomIndex]);
+
+                            break;
+                        case "Dog":
+                            dogPersonalityList.Add(dogPersonalityCorrect);
+                            dogPersonalityList.Add(dogPersonalityWrong1);
+                            dogPersonalityList.Add(dogPersonalityWrong2);
+
+                            //int dogPersonalityIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(dogPersonalityList[randomIndex]);
+
+                            break;
+                        case "Rabbit":
+                            rabbitPersonalityList.Add(rabbitPersonalityCorrect);
+                            rabbitPersonalityList.Add(rabbitPersonalityWrong1);
+                            rabbitPersonalityList.Add(rabbitPersonalityWrong2);
+
+                            //int rabbitPersonalityIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(rabbitPersonalityList[randomIndex]);
+
+                            break;
+                        case "Hamster":
+                            hamsterPersonalityList.Add(hamsterPersonalityCorrect);
+                            hamsterPersonalityList.Add(hamsterPersonalityWrong1);
+                            hamsterPersonalityList.Add(hamsterPersonalityWrong2);
+
+                            //int hamsterPersonalityIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(hamsterPersonalityList[randomIndex]);
+
+                            break;
+                    }
                     break;
-                case "Hamster":
-                    //Instantiate(hamsterAction, transform.position, Quaternion.identity);
-                    hamsterActionList.Add(hamster1);
-                    hamsterActionList.Add(hamster2);
-                    hamsterActionList.Add(hamster3);
+                case 3: // Toxic Objects
+                    switch (animalText)
+                    {
+                        case "Cat":
+                            catToxicObjList.Add(catToxicObjCorrect);
+                            catToxicObjList.Add(catToxicObjectWrong1);
+                            catToxicObjList.Add(catToxicObjectWrong2);
 
-                    int hamsterIndex = UnityEngine.Random.Range(0, 3);
-                    Instantiate(hamsterActionList[hamsterIndex]);
+                            int catToxicObjIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(catToxicObjList[catToxicObjIndex]);
+
+                            break;
+                        case "Dog":
+                            dogToxicObjList.Add(dogToxicObjCorrect);
+                            dogToxicObjList.Add(dogToxicObjectWrong1);
+                            dogToxicObjList.Add(dogToxicObjectWrong2);
+
+                            int dogToxicObjIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(dogToxicObjList[dogToxicObjIndex]);
+
+                            break;
+                        case "Rabbit":
+                            rabbitToxicObjList.Add(rabbitToxicObjCorrect);
+                            rabbitToxicObjList.Add(rabbitToxicObjectWrong1);
+                            rabbitToxicObjList.Add(rabbitToxicObjectWrong2);
+
+                            int rabbitToxicObjIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(rabbitToxicObjList[rabbitToxicObjIndex]);
+
+                            break;
+                        case "Hamster":
+                            hamsterToxicObjList.Add(hamsterToxicObjCorrect);
+                            hamsterToxicObjList.Add(hamsterToxicObjectWrong1);
+                            hamsterToxicObjList.Add(hamsterToxicObjectWrong2);
+
+                            int hamsterToxicObjIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(hamsterToxicObjList[hamsterToxicObjIndex]);
+
+                            break;
+                    }
+                    break;
+                case 4: // Exercise
+                    switch (animalText)
+                    {
+                        case "Cat":
+                            catExerciseList.Add(catExerciseCorrect);
+                            catExerciseList.Add(catExerciseWrong1);
+                            catExerciseList.Add(catExerciseWrong2);
+
+                            int catExerciseIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(catExerciseList[catExerciseIndex]);
+
+                            break;
+                        case "Dog":
+                            dogExerciseList.Add(dogExerciseCorrect);
+                            dogExerciseList.Add(dogExerciseWrong1);
+                            dogExerciseList.Add(dogExerciseWrong2);
+
+                            int dogExerciseIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(dogExerciseList[dogExerciseIndex]);
+
+                            break;
+                        case "Rabbit":
+                            rabbitExerciseList.Add(rabbitExerciseCorrect);
+                            rabbitExerciseList.Add(rabbitExerciseWrong1);
+                            rabbitExerciseList.Add(rabbitExerciseWrong2);
+
+                            int rabbitExerciseIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(rabbitExerciseList[rabbitExerciseIndex]);
+
+                            break;
+                        case "Hamster":
+                            hamsterExerciseList.Add(hamsterExerciseCorrect);
+                            hamsterExerciseList.Add(hamsterExerciseWrong1);
+                            hamsterExerciseList.Add(hamsterExerciseWrong2);
+
+                            int hamsterExerciseIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(hamsterExerciseList[hamsterExerciseIndex]);
+
+                            break;
+                    }
+                    break;
+                case 5: // Hygiene
+                    switch (animalText)
+                    {
+                        case "Cat":
+                            catHygieneList.Add(catHygieneCorrect);
+                            catHygieneList.Add(catHygieneWrong1);
+                            catHygieneList.Add(catHygieneWrong2);
+
+                            int catHygieneIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(catHygieneList[catHygieneIndex]);
+
+                            break;
+                        case "Dog":
+                            dogHygieneList.Add(dogHygieneCorrect);
+                            dogHygieneList.Add(dogHygieneWrong1);
+                            dogHygieneList.Add(dogHygieneWrong2);
+
+                            int dogHygieneIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(dogHygieneList[dogHygieneIndex]);
+
+                            break;
+                        case "Rabbit":
+                            rabbitHygieneList.Add(rabbitHygieneCorrect);
+                            rabbitHygieneList.Add(rabbitHygieneWrong1);
+                            rabbitHygieneList.Add(rabbitHygieneWrong2);
+
+                            int rabbitHygieneIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(rabbitHygieneList[rabbitHygieneIndex]);
+
+                            break;
+                        case "Hamster":
+                            hamsterHygieneList.Add(hamsterHygieneCorrect);
+                            hamsterHygieneList.Add(hamsterHygieneWrong1);
+                            hamsterHygieneList.Add(hamsterHygieneWrong2);
+
+                            int hamsterHygieneIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(hamsterHygieneList[hamsterHygieneIndex]);
+
+                            break;
+                    }
+                    break;
+                case 6: // Enrichment
+                    switch (animalText)
+                    {
+                        case "Cat":
+                            catEnrichmentList.Add(catEnrichmentCorrect);
+                            catEnrichmentList.Add(catEnrichmentWrong1);
+                            catEnrichmentList.Add(catEnrichmentWrong2);
+
+                            int catEnrichmentIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(catEnrichmentList[catEnrichmentIndex]);
+
+                            break;
+                        case "Dog":
+                            dogEnrichmentList.Add(dogEnrichmentCorrect);
+                            dogEnrichmentList.Add(dogEnrichmentWrong1);
+                            dogEnrichmentList.Add(dogEnrichmentWrong2);
+
+                            int dogEnrichmentIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(dogEnrichmentList[dogEnrichmentIndex]);
+
+                            break;
+                        case "Rabbit":
+                            rabbitEnrichmentList.Add(rabbitEnrichmentCorrect);
+                            rabbitEnrichmentList.Add(rabbitEnrichmentWrong1);
+                            rabbitEnrichmentList.Add(rabbitEnrichmentWrong2);
+
+                            int rabbitEnrichmentIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(rabbitEnrichmentList[rabbitEnrichmentIndex]);
+
+                            break;
+                        case "Hamster":
+                            hamsterEnrichmentList.Add(hamsterEnrichmentCorrect);
+                            hamsterEnrichmentList.Add(hamsterEnrichmentWrong1);
+                            hamsterEnrichmentList.Add(hamsterEnrichmentWrong2);
+
+                            int hamsterEnrichmentIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(hamsterEnrichmentList[hamsterEnrichmentIndex]);
+
+                            break;
+                    }
+                    break;
+                case 7: // Health Screening
+                    switch (animalText)
+                    {
+                        case "Cat":
+                            catHealthScreeningList.Add(catHealthScreeningCorrect);
+                            catHealthScreeningList.Add(catHeatlhScreeningWrong1);
+                            catHealthScreeningList.Add(catHealthScreeningWrong2);
+
+                            int catHealthScreeningIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(catHealthScreeningList[catHealthScreeningIndex]);
+
+                            break;
+                        case "Dog":
+                            dogHealthScreeningList.Add(dogHealthScreeningCorrect);
+                            dogHealthScreeningList.Add(dogHealthScreeningWrong1);
+                            dogHealthScreeningList.Add(dogHealthScreeningWrong2);
+
+                            int dogHealthScreeningIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(dogHealthScreeningList[dogHealthScreeningIndex]);
+
+                            break;
+                        case "Rabbit":
+                            rabbitHealthScreeningList.Add(rabbitHealthScreeningCorrect);
+                            rabbitHealthScreeningList.Add(rabbitHeatlhScreeningWrong1);
+                            rabbitHealthScreeningList.Add(rabbitHealthScreeningWrong2);
+
+                            int rabbitHealthScreeningIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(rabbitHealthScreeningList[rabbitHealthScreeningIndex]);
+
+                            break;
+                        case "Hamster":
+                            hamsterHealthScreeningList.Add(hamsterHealthScreeningCorrect);
+                            hamsterHealthScreeningList.Add(hamsterHeatlhScreeningWrong1);
+                            hamsterHealthScreeningList.Add(hamsterHealthScreeningWrong2);
+
+                            int hamsterHealthScreeningIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(hamsterHealthScreeningList[hamsterHealthScreeningIndex]);
+
+                            break;
+                    }
+                    break;
+                case 8: // Materials
+                    switch (animalText)
+                    {
+                        case "Cat":
+                            catMaterialsList.Add(catMaterialsCorrect);
+                            catMaterialsList.Add(catMaterialsWrong1);
+                            catMaterialsList.Add(catMaterialsWrong2);
+
+                            int catMaterialsIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(catMaterialsList[catMaterialsIndex]);
+
+                            break;
+                        case "Dog":
+                            dogMaterialsList.Add(dogMaterialsCorrect);
+                            dogMaterialsList.Add(dogMaterialsWrong1);
+                            dogMaterialsList.Add(dogMaterialsWrong2);
+
+                            int dogMaterialsIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(dogMaterialsList[dogMaterialsIndex]);
+
+                            break;
+                        case "Rabbit":
+                            rabbitMaterialsList.Add(rabbitMaterialsCorrect);
+                            rabbitMaterialsList.Add(rabbitMaterialsWrong1);
+                            rabbitMaterialsList.Add(rabbitMaterialsWrong2);
+
+                            int rabbitMaterialsIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(rabbitMaterialsList[rabbitMaterialsIndex]);
+
+                            break;
+                        case "Hamster":
+                            hamsterMaterialsList.Add(hamsterMaterialsCorrect);
+                            hamsterMaterialsList.Add(hamsterMaterialsWrong1);
+                            hamsterMaterialsList.Add(hamsterMaterialsWrong2);
+
+                            int hamsterMaterialsIndex = UnityEngine.Random.Range(0, 3);
+                            Instantiate(hamsterMaterialsList[hamsterMaterialsIndex]);
+
+                            break;
+                    }
                     break;
             }
-                actionCardCount++;
+
+            actionCardCount++;
+
         }
         else
         {
