@@ -1417,7 +1417,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137620426}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1910,11 +1910,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6073b550697aa0f4c8dd31433b8a41e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emptyHeart: {fileID: 0}
-  oneQHeart: {fileID: 0}
-  halfHeart: {fileID: 0}
-  threeQHeart: {fileID: 0}
-  fulLHeart: {fileID: 0}
+  emptyHeart: {fileID: 121033746177158209, guid: 729097473d210fc49b63a9936a211e38, type: 3}
+  oneQHeart: {fileID: 5174351169159771135, guid: 729097473d210fc49b63a9936a211e38, type: 3}
+  halfHeart: {fileID: 3055865935068274260, guid: 729097473d210fc49b63a9936a211e38, type: 3}
+  threeQHeart: {fileID: 4398820962100951922, guid: 729097473d210fc49b63a9936a211e38, type: 3}
+  fulLHeart: {fileID: -7744154336945494372, guid: 729097473d210fc49b63a9936a211e38, type: 3}
 --- !u!114 &1895563944
 MonoBehaviour:
   m_ObjectHideFlags: 0
