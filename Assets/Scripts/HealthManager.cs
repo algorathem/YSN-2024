@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject heartPrefab;
+    public float health, naxHealth;
+
+    private void Start()
     {
-        
+        DrawHeart();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DrawHeart()
     {
-        
+        CreateEmptyHeart();
+    }
+    public void CreateEmptyHeart()
+    {
+        GameObject newHeart = Instantiate(heartPrefab);
+        newHeart.transform.localScale = new Vector3(1, 1, 1);
+        //newHeart.transform.SetParent(transform);
+
+        HealthHeart heartComponent = newHeart.GetComponent<HealthHeart>();
+        heartComponent.SetHeartImage(HealthHeart.HeartStatus.Full);
+
     }
 }
