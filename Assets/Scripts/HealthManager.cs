@@ -5,23 +5,18 @@ using UnityEngine;
 public class HealthManager : MonoBehaviour
 {
     public GameObject heartPrefab;
-    public float health, naxHealth;
+    public float health = 2;
 
     private void Start()
     {
-        CreateEmptyHeart();
+        CreateNewHeart();
     }
 
-    //public void DrawHeart()
-    //{
-    //    CreateEmptyHeart();
-    //    for (int i = 0; i < 1; i++)
-    //    {
-    //        int heartStatusRemainder = (int)Mathf.Clamp(health - (i * 2), 0, 4);
-    //        heartComponent.SetHeartImage()
-    //    }
-    //}
-    public void CreateEmptyHeart()
+    public void ResetHeart()
+    {
+        Destroy(heartPrefab);
+    }
+    public void CreateNewHeart()
     {
         GameObject newHeart = Instantiate(heartPrefab);
 

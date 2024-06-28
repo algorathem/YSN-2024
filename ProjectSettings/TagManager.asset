@@ -18,6 +18,8 @@ TagManager:
   - ActionCard
   - SituationCard
   - Option
+  - HealthParent
+  - ISlot
   layers:
   - Default
   - TransparentFX

@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 30113662}
   m_Layer: 5
   m_Name: Correct Card Slot
-  m_TagString: Untagged
+  m_TagString: ISlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -482,6 +482,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 374fcd44e0e282d4bb8dce65e65ef49a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCorrectSlot: 1
+  health: 0
 --- !u!114 &30113660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,6 +817,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 374fcd44e0e282d4bb8dce65e65ef49a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCorrectSlot: 0
+  health: 0
 --- !u!212 &457892463
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -893,6 +897,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 374fcd44e0e282d4bb8dce65e65ef49a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCorrectSlot: 0
+  health: 0
 --- !u!1 &534773530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,6 +1218,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 374fcd44e0e282d4bb8dce65e65ef49a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCorrectSlot: 0
+  health: 0
 --- !u!212 &589166133
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1290,6 +1298,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 374fcd44e0e282d4bb8dce65e65ef49a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCorrectSlot: 0
+  health: 0
 --- !u!1 &886974820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,7 +1396,7 @@ GameObject:
   - component: {fileID: 1137620430}
   m_Layer: 5
   m_Name: HealthPoints
-  m_TagString: Untagged
+  m_TagString: HealthParent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1462,7 +1472,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartPrefab: {fileID: 624105982779659477, guid: fb1d57ad6dedf05418e077e46623f45b, type: 3}
   health: 2
-  naxHealth: 0
 --- !u!1 &1606802815
 GameObject:
   m_ObjectHideFlags: 0
@@ -1645,6 +1654,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 374fcd44e0e282d4bb8dce65e65ef49a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCorrectSlot: 0
+  health: 0
 --- !u!114 &1680828749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1885,7 +1896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1926698253}
   m_Layer: 0
-  m_Name: Cards
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
