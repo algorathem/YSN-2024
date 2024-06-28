@@ -1461,7 +1461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heartPrefab: {fileID: 624105982779659477, guid: fb1d57ad6dedf05418e077e46623f45b, type: 3}
-  health: 0
+  health: 2
   naxHealth: 0
 --- !u!1 &1606802815
 GameObject:
