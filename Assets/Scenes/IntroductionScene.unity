@@ -1383,6 +1383,7 @@ GameObject:
   - component: {fileID: 1137620427}
   - component: {fileID: 1137620429}
   - component: {fileID: 1137620428}
+  - component: {fileID: 1137620430}
   m_Layer: 5
   m_Name: HealthPoints
   m_TagString: Untagged
@@ -1447,6 +1448,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137620426}
   m_CullTransparentMesh: 1
+--- !u!114 &1137620430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137620426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac3ad4e7d50ab0439daa021c776ade1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heartPrefab: {fileID: 624105982779659477, guid: fb1d57ad6dedf05418e077e46623f45b, type: 3}
+  health: 0
+  naxHealth: 0
 --- !u!1 &1606802815
 GameObject:
   m_ObjectHideFlags: 0
