@@ -28,6 +28,7 @@ public class HealthManager : MonoBehaviour
         HealthHeart heartComponent = newHeart.GetComponent<HealthHeart>();
         heartComponent.SetHeartImage(HealthHeart.HeartStatus.Full);
 
+        //remove outer for loop after confirming that we only need 1 heart, modify i to accommodate no. of hearts
         for (int i = 0; i < 1; i++)
         {
             int heartStatusRemainder = (int)Mathf.Clamp(health - (i * 2), 0, 4);

@@ -18,6 +18,19 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
 
     }
 
+    //Code to handle card zooming
+    public void OnHoverEnter()
+    {
+        Debug.Log("time to zoom");
+    }
+
+    public void OnHoverExit()
+    {
+        Debug.Log("ZOOM OUT");
+    }
+
+
+    //Code to handle Drag And Drop events
     public void OnPointerDown(PointerEventData eventData)
     {
         Debug.Log("PointerDown");
@@ -47,6 +60,8 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
 
     }
 
+
+    //Code to handle Card boundaries
     void LateUpdate()
     {
 

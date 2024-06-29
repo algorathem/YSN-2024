@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2447618697566611055}
   - component: {fileID: 2447618697566611054}
   - component: {fileID: -4309702419858319248}
+  - component: {fileID: -4181555762969577011}
   m_Layer: 0
   m_Name: hamster_card
   m_TagString: Untagged
@@ -129,13 +130,18 @@ MonoBehaviour:
   situationDescription:
   - hamster food
   - 'You are buying a cage for your hamster, how big should it be? '
-  - hamster personality
-  - hamster toxic
-  - hamster exercise
+  - 'Your hamster is inactive at night. What should you do? '
+  - Hamsters are known to chew very often to maintain their dental health. What items
+    can you add into the hasmter cage without endangering it?
+  - 'Your senior hamster is experiencing age-related decline in mobility and muscle
+    tone, requiring specialized care. '
   - haster hygiene
-  - hamster enrichmetn
+  - You noticed your hamster has been chewing onto the water bottle sprout and the
+    bars of the cage. What should be done to ensure your hamster would not be that
+    bored?
   - hamster vet
-  - hamster materials
+  - 'To make your hamster comfortable during their hibernation mode, what should
+    you include in their cage? '
 --- !u!114 &-4309702419858319248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,6 +162,51 @@ MonoBehaviour:
     width: 18
     height: 10
   DrawBoundary: 1
+--- !u!114 &-4181555762969577011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2447618697566611040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -4309702419858319248}
+          m_TargetAssemblyTypeName: EndDrag, Assembly-CSharp
+          m_MethodName: OnHoverEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -4309702419858319248}
+          m_TargetAssemblyTypeName: EndDrag, Assembly-CSharp
+          m_MethodName: OnHoverExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &4542958655366614535
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,7 +241,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1.16}
+  m_AnchoredPosition: {x: 0, y: -0.96}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8508250449031631239
@@ -248,8 +299,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.8
-  m_fontSizeBase: 0.8
+  m_fontSize: 0.4
+  m_fontSizeBase: 0.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -284,7 +335,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 97.823715, y: 20.926922, z: 97.882034, w: 23.29297}
+  m_margin: {x: 98.52279, y: 21.206089, z: 98.60581, w: 25.340189}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -324,7 +375,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.24}
+  m_AnchoredPosition: {x: 0, y: 1.75}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8132064134186318391
@@ -382,8 +433,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.8
-  m_fontSizeBase: 0.8
+  m_fontSize: 0.6
+  m_fontSizeBase: 0.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

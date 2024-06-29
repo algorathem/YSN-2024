@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 3261932892402080799}
   - component: {fileID: 3261932892402080792}
   - component: {fileID: 1570283535358343945}
+  - component: {fileID: -4460189305979212968}
   m_Layer: 0
   m_Name: dog_card
   m_TagString: Untagged
@@ -241,15 +242,20 @@ MonoBehaviour:
   faceSprite: {fileID: -3620658920443962820, guid: 60853a353962bb34bbebe5583e8bde01, type: 3}
   backSprite: {fileID: 4956484290247199680, guid: 60853a353962bb34bbebe5583e8bde01, type: 3}
   situationDescription:
-  - doj food
+  - 'Your dog gets bored often and messes the house! What can of food enrichment
+    should you provide? '
   - 'You''ve just adopted a dog and are getting your house ready for its arrival.
     What items should you remove to ensure a safe and happy environment? '
-  - Dog personality situation
-  - Dog toxic situation
-  - Dog exercise situation
-  - Dog Hygiene Situation
-  - dog enrichment situation
-  - dog vet situation
+  - 'Your dog is afraid of loud noises, what should you do to make it less scared
+    of noises? '
+  - You are planning to buy a treat for your dog at the convenience store. What should
+    be given as a treat?situation
+  - 'Your dog lacks mental  stimulation, resulting in behavior problems like excessive
+    chewing, digging, or vocalization. '
+  - 'What is correct regarding the grooming of a dog? '
+  - 'Your pet dog has been seeking your attention alot more than usual. How can you
+    further engage it? '
+  - 'Your puppy needed to get its vaccines which costs about $100 '
   - doj materials to jet
 --- !u!114 &1570283535358343945
 MonoBehaviour:
@@ -271,6 +277,51 @@ MonoBehaviour:
     width: 18
     height: 10
   DrawBoundary: 1
+--- !u!114 &-4460189305979212968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3261932892402080793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1570283535358343945}
+          m_TargetAssemblyTypeName: EndDrag, Assembly-CSharp
+          m_MethodName: OnHoverEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1570283535358343945}
+          m_TargetAssemblyTypeName: EndDrag, Assembly-CSharp
+          m_MethodName: OnHoverExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6514227620328299933
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,7 +356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.42}
+  m_AnchoredPosition: {x: 0, y: 1.72}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6860090096858864086
@@ -363,8 +414,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.8
-  m_fontSizeBase: 0.8
+  m_fontSize: 0.6
+  m_fontSizeBase: 0.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -439,7 +490,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1.38}
+  m_AnchoredPosition: {x: 0, y: -1.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2246972055778636021
@@ -497,8 +548,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.8
-  m_fontSizeBase: 0.8
+  m_fontSize: 0.4
+  m_fontSizeBase: 0.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -533,7 +584,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 97.80067, y: 20.68494, z: 98.01856, w: 23.855574}
+  m_margin: {x: 98.641495, y: 20.68494, z: 98.70319, w: 25.973717}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
