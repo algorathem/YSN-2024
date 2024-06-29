@@ -11,32 +11,10 @@ public class ActionFlipAnim : MonoBehaviour
     private Sprite faceSprite, backSprite;
     private bool coroutineAllowed, facedUp;
 
-    //public TextMeshProUGUI optionDescriptionText;
-    //public TextMeshProUGUI topicText;
-    //public string[] optionDescription = new string[3];
-    //public static int topicIndex;
-    //private string[] allTopics = new string[9];
+   
     public bool isCorrect;
 
 
-    void Awake()
-    {
-        //optionDescriptionText = GameObject.FindGameObjectWithTag("Option").GetComponent<TextMeshProUGUI>();
-        //allTopics[0] = "Food";
-        //allTopics[1] = "Habitats";
-        //allTopics[2] = "Personality";
-        //allTopics[3] = "Toxic Objects";
-        //allTopics[4] = "Exercise";
-        //allTopics[5] = "Hygiene";
-        //allTopics[6] = "Enrichment";
-        //allTopics[7] = "Health Screening";
-        //allTopics[8] = "Materials";
-        //topicIndex = Random.Range(0, 8);
-        //topicText.text = allTopics[topicIndex];
-
-
-
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +25,7 @@ public class ActionFlipAnim : MonoBehaviour
 
         coroutineAllowed = true;
         facedUp = false;
+
     }
 
     private void OnMouseDown()
@@ -64,7 +43,10 @@ public class ActionFlipAnim : MonoBehaviour
         if (!facedUp)
         {
 
-            //topicText.text = "Situation";
+            foreach (Transform child in transform)
+            {
+                child.gameObject.SetActive(true);
+            }
 
             for (float i = 0f; i <= 180f; i += 10f)
             {
@@ -74,15 +56,16 @@ public class ActionFlipAnim : MonoBehaviour
                     rend.sprite = faceSprite;
                 }
                 yield return new WaitForSeconds(0.01f);
-                //situationDescriptionText.text = situationDescription[topicIndex];
-                //print(topicIndex);
+                
             }
         }
         else if (facedUp)
         {
 
-            //topicText.text = allTopics[topicIndex];
-            //situationDescriptionText.text = "";
+            foreach (Transform child in transform)
+            {
+                child.gameObject.SetActive(false);
+            }
 
             for (float i = 180f; i >= 0f; i -= 10f)
             {
