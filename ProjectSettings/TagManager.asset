@@ -19,7 +19,8 @@ TagManager:
   - SituationCard
   - Option
   - HealthParent
-  - ISlot
+  - NewHeart
+  - PointTrackerSlot
   layers:
   - Default
   - TransparentFX

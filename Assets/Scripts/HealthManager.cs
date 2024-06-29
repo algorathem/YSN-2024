@@ -5,19 +5,21 @@ using UnityEngine;
 public class HealthManager : MonoBehaviour
 {
     public GameObject heartPrefab;
-    public float health = 2;
+    public float health;
 
     private void Start()
     {
         CreateNewHeart();
+        
     }
 
     public void ResetHeart()
     {
-        Destroy(heartPrefab);
+        Destroy(GameObject.FindGameObjectWithTag("NewHeart"));
     }
     public void CreateNewHeart()
     {
+        health = AnswerSlot.health;
         GameObject newHeart = Instantiate(heartPrefab);
 
         newHeart.transform.SetParent(transform, false);

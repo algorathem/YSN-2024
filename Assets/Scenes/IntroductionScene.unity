@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 30113662}
   m_Layer: 5
   m_Name: Correct Card Slot
-  m_TagString: ISlot
+  m_TagString: PointTrackerSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -484,6 +484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectSlot: 1
   health: 0
+  healthParent: {fileID: 0}
 --- !u!114 &30113660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -819,6 +820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectSlot: 0
   health: 0
+  healthParent: {fileID: 0}
 --- !u!212 &457892463
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -899,6 +901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectSlot: 0
   health: 0
+  healthParent: {fileID: 0}
 --- !u!1 &534773530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,6 +1223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectSlot: 0
   health: 0
+  healthParent: {fileID: 0}
 --- !u!212 &589166133
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1300,6 +1304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectSlot: 0
   health: 0
+  healthParent: {fileID: 0}
 --- !u!1 &886974820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,6 +1661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectSlot: 0
   health: 0
+  healthParent: {fileID: 0}
 --- !u!114 &1680828749
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,21 +6,10 @@ using UnityEngine.EventSystems;
 public class AnswerSlot : MonoBehaviour, IDropHandler
 {
     public bool isCorrectSlot;
-    public float health;
-    public HealthManager healthParent;
-    // Start is called before the first frame update
-    void Start()
-    {
-        HealthManager healthParent = GameObject.FindGameObjectWithTag("HealthParent").GetComponent<HealthManager>();
-        health = healthParent.health;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    public static float health = 2;
+    private HealthManager healthParent;
+  
+  
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("Ondrop");
@@ -28,24 +17,24 @@ public class AnswerSlot : MonoBehaviour, IDropHandler
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //healthParent.ResetHeart();
+        HealthManager healthParent = GameObject.FindGameObjectWithTag("HealthParent").GetComponent<HealthManager>();
+       
+        healthParent.ResetHeart();
         if (isCorrectSlot)
         {
             if (collision.gameObject.GetComponent<ActionFlipAnim>().isCorrect == true)
             {
                 health++;
                 healthParent.CreateNewHeart();
+                print("add");
             }
             else if(collision.gameObject.GetComponent<ActionFlipAnim>().isCorrect == false)
             {
                 health--;
                 healthParent.CreateNewHeart();
+                print("del");
             }
-            else
-            {
-                health += 0;
-                healthParent.CreateNewHeart();
-            }
+            
         }
         else if (!isCorrectSlot)
         {
@@ -59,11 +48,7 @@ public class AnswerSlot : MonoBehaviour, IDropHandler
                 health++;
                 healthParent.CreateNewHeart();
             }
-            else
-            {
-                health+=0;
-                healthParent.CreateNewHeart();
-            }
+           
         }
     }
 
