@@ -8,6 +8,10 @@ public class AnswerSlot : MonoBehaviour, IDropHandler
     public bool isCorrectSlot;
     public static float health = 2;
     private HealthManager healthParent;
+
+    public AudioClip correctSound;
+    public AudioClip incorrectSound;
+    public AudioSource audioFeedback;
   
   
     public void OnDrop(PointerEventData eventData)
@@ -25,12 +29,14 @@ public class AnswerSlot : MonoBehaviour, IDropHandler
             if (collision.gameObject.GetComponent<ActionFlipAnim>().isCorrect == true)
             {
                 health++;
+                audioFeedback.clip = correctSound;
                 healthParent.CreateNewHeart();
                 print("add");
             }
             else if(collision.gameObject.GetComponent<ActionFlipAnim>().isCorrect == false)
             {
                 health--;
+                audioFeedback.clip = incorrectSound;
                 healthParent.CreateNewHeart();
                 print("del");
             }
@@ -41,15 +47,18 @@ public class AnswerSlot : MonoBehaviour, IDropHandler
             if (collision.gameObject.GetComponent<ActionFlipAnim>().isCorrect == true)
             {
                 health--;
+                audioFeedback.clip = incorrectSound;
                 healthParent.CreateNewHeart();
             }
             else if (collision.gameObject.GetComponent<ActionFlipAnim>().isCorrect == false)
             {
                 health++;
+                audioFeedback.clip = correctSound;
                 healthParent.CreateNewHeart();
             }
            
         }
+        audioFeedback.Play();
     }
 
 

@@ -15,6 +15,7 @@ public class WheelController : MonoBehaviour
     public int section;
     float totalAngle;
     public string[] selectedCharacter;
+    public AudioSource spinnerSound;
 
     // Start is called before the first frame update
     private void Start()
@@ -29,6 +30,7 @@ public class WheelController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && isCoroutine)
         {
             StartCoroutine(Spin());
+            spinnerSound.Play();
         }
     }
 
