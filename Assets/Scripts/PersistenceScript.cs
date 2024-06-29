@@ -7,7 +7,7 @@ public class PersistenceScript : MonoBehaviour
 {
     public string winText;
     private Button deckOfActions;
-    private GameObject textParent;
+    //private GameObject textParent;
     public Sprite sprite;
 
     public GameObject dogCard;
@@ -34,10 +34,10 @@ public class PersistenceScript : MonoBehaviour
             {
                 Instantiate(hamsterCard, Vector3.zero, Quaternion.identity);
                 deckOfActions = GameObject.FindGameObjectWithTag("ActionButton").GetComponent<Button>();
-                textParent = GameObject.FindGameObjectWithTag("TextParent");
+                //textParent = GameObject.FindGameObjectWithTag("TextParent");
                 sprite = Resources.Load<Sprite>("hamster_button");
                 deckOfActions.image.sprite = sprite;
-                textParent.transform.localPosition = hamsterCard.transform.position;
+                //textParent.transform.localPosition = hamsterCard.transform.position;
                 situationCardExists = true;
 
             }
@@ -45,10 +45,10 @@ public class PersistenceScript : MonoBehaviour
             {
                 Instantiate(catCard, Vector3.zero, Quaternion.identity);
                 deckOfActions = GameObject.FindGameObjectWithTag("ActionButton").GetComponent<Button>();
-                textParent = GameObject.FindGameObjectWithTag("TextParent");
+                //textParent = GameObject.FindGameObjectWithTag("TextParent");
                 sprite = Resources.Load<Sprite>("cat_button");
                 deckOfActions.image.sprite = sprite;
-                textParent.transform.localPosition = catCard.transform.localPosition;
+                //textParent.transform.localPosition = catCard.transform.localPosition;
                 situationCardExists = true;
 
 
@@ -57,10 +57,10 @@ public class PersistenceScript : MonoBehaviour
             {
                 Instantiate(dogCard, Vector3.zero, Quaternion.identity);
                 deckOfActions = GameObject.FindGameObjectWithTag("ActionButton").GetComponent<Button>();
-                textParent = GameObject.FindGameObjectWithTag("TextParent");
+                //textParent = GameObject.FindGameObjectWithTag("TextParent");
                 sprite = Resources.Load<Sprite>("dog_button");
                 deckOfActions.image.sprite = sprite;
-                textParent.transform.localPosition = dogCard.transform.localPosition;
+                //textParent.transform.localPosition = dogCard.transform.localPosition;
                 situationCardExists = true;
 
             }
@@ -68,10 +68,10 @@ public class PersistenceScript : MonoBehaviour
             {
                 Instantiate(rabbitCard, Vector3.zero, Quaternion.identity);
                 deckOfActions = GameObject.FindGameObjectWithTag("ActionButton").GetComponent<Button>();
-                textParent = GameObject.FindGameObjectWithTag("TextParent");
+                //textParent = GameObject.FindGameObjectWithTag("TextParent");
                 sprite = Resources.Load<Sprite>("rabbit_button");
                 deckOfActions.image.sprite = sprite;
-                textParent.transform.localPosition = rabbitCard.transform.localPosition;
+                //textParent.transform.localPosition = rabbitCard.transform.localPosition;
                 situationCardExists = true;
 
             }
