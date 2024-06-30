@@ -242,8 +242,7 @@ MonoBehaviour:
   faceSprite: {fileID: -3620658920443962820, guid: 60853a353962bb34bbebe5583e8bde01, type: 3}
   backSprite: {fileID: 4956484290247199680, guid: 60853a353962bb34bbebe5583e8bde01, type: 3}
   situationDescription:
-  - 'Your dog gets bored often and messes the house! What can of food enrichment
-    should you provide? '
+  - What types of food should you avoid feeding your pet dog?
   - 'You''ve just adopted a dog and are getting your house ready for its arrival.
     What items should you remove to ensure a safe and happy environment? '
   - 'Your dog is afraid of loud noises, what should you do to make it less scared

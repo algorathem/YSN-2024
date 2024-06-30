@@ -221,14 +221,15 @@ MonoBehaviour:
   - Your friend wants to adopt a pet rabbit and asks what type of living environment
     is suitable for the rabbit. What should you answer?
   - 'Your rabbit isn''t acting like its usual happy self. What should you do? '
-  - Your friend ask for recommendations on what to avoid feeding their pet rabbit.
+  - Your friend asks for recommendations on what to avoid feeding their pet rabbit.
     What should you say?
   - 'Your rabbit is overweight and lacks physical activity, leading to health issues
     like obesity and decreased mobility. '
   - Your rabbit has overgrown teeth. What should you do?
   - 'Your rabbit has been grooming itself unnecessary untill it starts to have bald
     spots. How can you prevent this ? '
-  - 'Your female rabbit has to get sprayed and it costs about $300-600. '
+  - Your female rabbit has to get sprayed and it costs about $300-600.  What should
+    you do?
   - 'What are the most essential things you need for a rabbit? '
 --- !u!61 &6840591278477955225
 BoxCollider2D:
