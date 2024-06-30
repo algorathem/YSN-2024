@@ -483,7 +483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCorrectSlot: 1
-  correctSound: {fileID: 8300000, guid: 2a284f963dca67341930e1c78eaa123e, type: 3}
+  correctSound: {fileID: 8300000, guid: 9c1240b449a9c244cad772680c648d42, type: 3}
   incorrectSound: {fileID: 8300000, guid: 05d06b12f43e14640bab2ccbfabbed5b, type: 3}
   audioFeedback: {fileID: 555453516}
 --- !u!114 &30113660
@@ -818,7 +818,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2a284f963dca67341930e1c78eaa123e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9c1240b449a9c244cad772680c648d42, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1272,7 +1272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCorrectSlot: 0
-  correctSound: {fileID: 8300000, guid: 2a284f963dca67341930e1c78eaa123e, type: 3}
+  correctSound: {fileID: 8300000, guid: 9c1240b449a9c244cad772680c648d42, type: 3}
   incorrectSound: {fileID: 8300000, guid: 05d06b12f43e14640bab2ccbfabbed5b, type: 3}
   audioFeedback: {fileID: 555453516}
 --- !u!114 &1680828749
