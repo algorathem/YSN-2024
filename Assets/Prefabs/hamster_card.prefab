@@ -128,7 +128,8 @@ MonoBehaviour:
   faceSprite: {fileID: -3491745874921425858, guid: 791941359e89f14408740a5dd76fefa0, type: 3}
   backSprite: {fileID: -8302273232359590728, guid: 791941359e89f14408740a5dd76fefa0, type: 3}
   situationDescription:
-  - hamster food
+  - 'Your hamster took a bite of your chocolate and seems to love it. What should
+    you do now? '
   - 'You are buying a cage for your hamster, how big should it be? '
   - 'Your hamster is inactive at night. What should you do? '
   - Hamsters are known to chew very often to maintain their dental health. What items

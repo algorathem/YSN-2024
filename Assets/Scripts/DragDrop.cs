@@ -22,11 +22,13 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
     public void OnHoverEnter()
     {
         Debug.Log("time to zoom");
+        gameObject.transform.localScale = new Vector3(2, 2, 2);
     }
 
     public void OnHoverExit()
     {
         Debug.Log("ZOOM OUT");
+        gameObject.transform.localScale = new Vector3(1, 1, 1);
     }
 
 

@@ -250,13 +250,14 @@ MonoBehaviour:
     of noises? '
   - You are planning to buy a treat for your dog at the convenience store. What should
     be given as a treat?situation
-  - 'Your dog lacks mental  stimulation, resulting in behavior problems like excessive
+  - 'Your dog lacks mental stimulation, resulting in behavior problems like excessive
     chewing, digging, or vocalization. '
   - 'What is correct regarding the grooming of a dog? '
   - 'Your pet dog has been seeking your attention alot more than usual. How can you
     further engage it? '
-  - 'Your puppy needed to get its vaccines which costs about $100 '
-  - doj materials to jet
+  - Your puppy needs to get its vaccines, which cost about $100. What should you
+    do?
+  - Your dog is bored. What can you buy to help alleviate its boredom?
 --- !u!114 &1570283535358343945
 MonoBehaviour:
   m_ObjectHideFlags: 0

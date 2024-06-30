@@ -26,6 +26,11 @@ public class ActionFlipAnim : MonoBehaviour
         coroutineAllowed = true;
         facedUp = false;
 
+        foreach (Transform child in transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+
     }
 
     private void OnMouseDown()
